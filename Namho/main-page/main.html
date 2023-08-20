@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div id="wrap">
         <header>
             <div class="header grid">
                 <div class="header-nav-container">
@@ -241,9 +241,363 @@
                 </div>
             </div>
         </header>
+
         <div class="main-container">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- 매인의 배너부분 -->
+            <div class="banner-show-container">
+                <div class="arrows left" style="left: 10%;">
+                    <?xml version="1.0" ?>
+                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                    <svg width="24px" height="24px" id="Layer_1" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        style="enable-background:new 0 0 512 512; transform: rotate(180deg); transform-origin: center;">
+                        <polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256" />
+                    </svg>
+                </div>
+                <div class="arrows right" style="right: 10%">
+                    <?xml version="1.0" ?>
+                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                    <svg width="24px" height="24px" id="Layer_2" style="enable-background:new 0 0 512 512;"
+                        version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 " />
+                    </svg>
+                </div>
+                <div class="banners" style="transform: translate(-100vw);">
+                    <div class="slide" id="lastSlide">
+                        <div class="inner-container">
+                            <img src="banner/004.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide" id="slide1">
+                        <div class="inner-container">
+                            <div>
+                                <div class="banner-mainfont" style="color: #fff;">
+                                    모두가 함께하는<br><span style="color: #2A7DE1;">우리</span>들의 모임 일정
+                                </div>
+                            </div>
+                            <div class="banner-right-side-box-moving">
+                                <div class="front-flip">
+                                    <div class="triangle"></div>
+                                    <div class="logo-font logo-front-left" style="color: #E0703F">Together?</div>
+                                    <div class="logo-font logo-front-right" style="color: #2A7DE1;">We Young!</div>
+                                </div>
+                                <div class="back-flip">
+                                    <div class="logo-font logo-back-left" style="color: #2A7DE1;">함께해</div>
+                                    <div class="logo-font logo-back-right" style="color: #2A7DE1;">young</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="slide2">
+                        <div class="inner-container">
+                            <img src="banner/002.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide" id="slide3">
+                        <div class="inner-container">
+                            <img src="banner/003.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide" id="slide4">
+                        <div class="inner-container">
+                            <img src="banner/004.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide" id="firstSlide">
+                        <div class="inner-container">
+                            <div>
+                                <div class="banner-mainfont" style="color: #fff;">
+                                    모두가 함께하는<br><span style="color: #2A7DE1;">우리</span>들의 모임 일정
+                                </div>
+                            </div>
+                            <div class="banner-right-side-box">
+                                <div class="front-flip">
+                                    <div class="triangle"></div>
+                                    <div class="logo-font logo-front-left" style="color: #E0703F">Together?</div>
+                                    <div class="logo-font logo-front-right" style="color: #2A7DE1;">We Young!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="banner-btns-grid">
+                    <div id="banner-btns">
+                        <div class="banner-btn">
+                            <button></button>
+                        </div>
+                        <div class="banner-btn">
+                            <button></button>
+                        </div>
+                        <div class="banner-btn">
+                            <button></button>
+                        </div>
+                        <div class="banner-btn">
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 사이트 소개 카드 -->
+            <div class="introduces">
+                <div class="grid">
+                    <div class="introduce-container-with-extra">
+                        <div class="introduce-container">
+                            <div class="main-section-title">함께해young과 함께하는 컨텐츠</div>
+                        </div>
+                        <div class="mb24"></div>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="introduce/001.jpg">
+                            </div>
+                            <div class="card-info-container">
+                                <div class="card-info-subtitle">게시판</div>
+                                <div class="card-info-title">함께 소통하며 다양한 정보를 나누는 자유 게시판</div>
+                                <div class="card-info-bottom-line">
+                                    <span>--개의 새로운 게시글</span>
+                                    <hr>
+                                    <span>현재 날짜 기준</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="introduce/002.jpg">
+                            </div>
+                            <div class="card-info-container">
+                                <div class="card-info-subtitle">모임 게시판</div>
+                                <div class="card-info-title">지역별로 사람찾아 모임을 만들고 참여할 수 있는 모임 게시판</div>
+                                <div class="card-info-bottom-line">
+                                    <span>--개의 모임 진행 예정</span>
+                                    <hr>
+                                    <span>현재 날짜 기준</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="introduce/003.jpg">
+                            </div>
+                            <div class="card-info-container">
+                                <div class="card-info-subtitle">나의 일정</div>
+                                <div class="card-info-title">내 모임 일정을 한 눈에,<br>나의 일정</div>
+                                <div class="card-info-bottom-line">
+                                    <span>--개의 일정</span>
+                                    <hr>
+                                    <span>현재 날짜 기준</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="introduce/004.jpg">
+                            </div>
+                            <div class="card-info-container">
+                                <div class="card-info-subtitle">청년 Info</div>
+                                <div class="card-info-title">전국 지자체의 청년 지원 사업들을 한 페이지에 담은 청년 Info 게시판</div>
+                                <div class="card-info-bottom-line">
+                                    <span>--개의 진행중인 청년 지원 사업</span>
+                                    <hr>
+                                    <span>현재 날짜 기준</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 모임 커뮤니티 소개 칸 -->
+            <div class="community-introduce">
+                <div class="grid">
+                    <div class="introduce-container">
+                        <div class="main-section-title">커뮤니티에서 지금 만나요</div>
+                    </div>
+                    <div class="community-container">
+                        <div class="community">
+                            <div>
+                                <div class="community-tags-container">
+                                    <span class="tag first-tag">조회수 TOP</span>
+                                    <span class="tag">취업 고민</span>
+                                </div>
+                                <h2 class="community-title">삼성전자 공정기술 직무</h2>
+                                <p class="community-content">안녕하세요!
+                                    현재 삼성전자 공정기술 직무를 목표로 취업을 준비하고있는 학생입니다.
+                                    직무에 대해 간접적으로라도 체험을 하고싶어서 직무부트캠프를 신청하려고하는데, 둘 중 어떤 것을 선택해야 실질적으로 자기소개서 작성이나 면접 때 도움이
+                                    될지 고르기가 어려워 이렇게 질문을 남깁니다.
+                                    직무부트캠프 내용을 한 번 가져와봤습니다.
+
+                                    1. 반도체회사 제조기술 실무 부트캠프
+
+                                    https://comento.kr/edu/learn/생산제조/공정기술-G382
+
+                                    2.반도체 저수율 개선업무 부트캠프
+
+                                    https://comento.kr/edu/learn/생산제조/공정기술-G796
+
+                                    내용이 너무 많아서 불가피하게 링크를 복사하게되었습니다.
+                                    삼성전자 공정기술 직무에서 일하고있는 지인 2명에게 물어봤으나 모두 저수율 개선업무의 경우 본인이 하는 일이랑은 다르다고하네요... 공정기술 안에서도
+                                    다양하게 나뉘어져서 그런 것 같은데 현직자의 관점에서 실제 자소서 작성이나 면접 시 도움될 것 같은 것을 추천해주시면 정말 감사하겠습니다!!
+                                </p>
+                                <div class="community-icons">
+                                    <div class="community-icon">
+                                        <svg data-v-bd9f2bcc="" data-v-aa558d6e="" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                            class="mr4" style="fill: rgb(42, 125, 225);">
+                                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.69638 13.5299C4.05199 13.1404 4.04399 12.5417 3.67811 12.1619C2.63802 11.0821 2 9.6166 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14H3.26717L3.69638 13.5299ZM1 8C1 9.88557 1.74553 11.597 2.95789 12.8556L1.76434 14.1629C1.47131 14.4838 1.699 15 2.13358 15H8C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8Z">
+                                            </path>
+                                            <path data-v-bd9f2bcc=""
+                                                d="M6 8C6 8.41421 5.66421 8.75 5.25 8.75C4.83579 8.75 4.5 8.41421 4.5 8C4.5 7.58579 4.83579 7.25 5.25 7.25C5.66421 7.25 6 7.58579 6 8Z">
+                                            </path>
+                                            <path data-v-bd9f2bcc=""
+                                                d="M8.75 8C8.75 8.41421 8.41421 8.75 8 8.75C7.58579 8.75 7.25 8.41421 7.25 8C7.25 7.58579 7.58579 7.25 8 7.25C8.41421 7.25 8.75 7.58579 8.75 8Z">
+                                            </path>
+                                            <path data-v-bd9f2bcc=""
+                                                d="M11.5 8C11.5 8.41421 11.1642 8.75 10.75 8.75C10.3358 8.75 10 8.41421 10 8C10 7.58579 10.3358 7.25 10.75 7.25C11.1642 7.25 11.5 7.58579 11.5 8Z">
+                                            </path>
+                                        </svg>
+                                        <div class="community-icons-count" style="color: rgb(42, 125, 225);">2</div>
+                                    </div>
+                                    <div class="community-icon">
+                                        <svg data-v-bd9f2bcc="" data-v-aa558d6e="" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                            class="mr4" style="fill: rgb(233, 37, 37);">
+                                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8 5.79179L7.16516 4.5257C6.75467 3.90318 6.05854 3.5 5.27273 3.5C4.02534 3.5 3 4.5219 3 5.8C3 6.46253 3.27323 7.21871 3.78425 8.03207C4.28965 8.8365 4.98019 9.62153 5.6981 10.3215C6.41239 11.0179 7.13067 11.6079 7.67232 12.0246C7.79109 12.116 7.90097 12.1988 8 12.2722C8.09904 12.1988 8.20892 12.116 8.32768 12.0246C8.86934 11.6079 9.58761 11.0179 10.3019 10.3215C11.0198 9.62153 11.7103 8.8365 12.2157 8.03207C12.7268 7.21871 13 6.46253 13 5.8C13 4.5219 11.9747 3.5 10.7273 3.5C9.94146 3.5 9.24533 3.90318 8.83485 4.5257L8 5.79179ZM8 13.5C8 13.5 2 9.5 2 5.8C2 3.97746 3.46525 2.5 5.27273 2.5C6.0432 2.5 6.75149 2.76846 7.31061 3.21768C7.57757 3.43217 7.81052 3.68786 8 3.97522C8.18948 3.68786 8.42244 3.43217 8.6894 3.21768C9.24851 2.76846 9.9568 2.5 10.7273 2.5C12.5348 2.5 14 3.97746 14 5.8C14 9.5 8 13.5 8 13.5Z">
+                                            </path>
+                                        </svg>
+                                        <div class="community-icons-count" style="color: rgb(233, 37, 37);">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="content-reply-devider">
+                            <div class="community-reply-container">
+                                <div style="margin-right: 8px;">
+                                    <div class="community-reply-avatar">
+                                        <div class="missing-image">
+                                            <svg data-v-bd9f2bcc="" data-v-16c10fa5="" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                class="avatar-no-profile" style="fill: rgb(207, 212, 215);">
+                                                <circle data-v-bd9f2bcc="" cx="8" cy="4.5" r="2.5"></circle>
+                                                <path data-v-bd9f2bcc=""
+                                                    d="M4.11325 10.0801C4.97961 8.78058 6.43814 8 8 8C9.56186 8 11.0204 8.78058 11.8868 10.0801L12.0826 10.3739C13.1159 11.9239 12.0048 14 10.142 14H5.85801C3.99518 14 2.88408 11.9239 3.91739 10.3739L4.11325 10.0801Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="community-reply-name-container">
+                                        <span class="community-reply-name">유저1</span>
+                                        <div class="community-reply-subname">삼성전자</div>
+                                    </div>
+                                    <p class="community-reply-content">
+                                        공정설계 직무의 가장 큰 미션은 반도체 소자를 개발하는 것인데요.
+                                        특히 Design rule과 Spice model을 만드는 일을 하고 있습니다. 흔히 파운드리 관련 신문기
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="community-to-more">
+                                <div>+ 더보기</div>
+                            </button>
+                        </div>
+                        <div class="community">
+                            <div>
+                                <div class="community-tags-container">
+                                    <span class="tag first-tag">조회수 TOP</span>
+                                    <span class="tag">취업 고민</span>
+                                </div>
+                                <h2 class="community-title">삼성전자 공정기술 직무</h2>
+                                <p class="community-content">안녕하세요!
+                                    현재 삼성전자 공정기술 직무를 목표로 취업을 준비하고있는 학생입니다.
+                                    직무에 대해 간접적으로라도 체험을 하고싶어서 직무부트캠프를 신청하려고하는데, 둘 중 어떤 것을 선택해야 실질적으로 자기소개서 작성이나 면접 때
+                                    도움이
+                                    될지 고르기가 어려워 이렇게 질문을 남깁니다.
+                                    직무부트캠프 내용을 한 번 가져와봤습니다.
+
+                                    1. 반도체회사 제조기술 실무 부트캠프
+
+                                    https://comento.kr/edu/learn/생산제조/공정기술-G382
+
+                                    2.반도체 저수율 개선업무 부트캠프
+
+                                    https://comento.kr/edu/learn/생산제조/공정기술-G796
+
+                                    내용이 너무 많아서 불가피하게 링크를 복사하게되었습니다.
+                                    삼성전자 공정기술 직무에서 일하고있는 지인 2명에게 물어봤으나 모두 저수율 개선업무의 경우 본인이 하는 일이랑은 다르다고하네요... 공정기술
+                                    안에서도
+                                    다양하게 나뉘어져서 그런 것 같은데 현직자의 관점에서 실제 자소서 작성이나 면접 시 도움될 것 같은 것을 추천해주시면 정말 감사하겠습니다!!
+                                </p>
+                                <div class="community-icons">
+                                    <div class="community-icon">
+                                        <svg data-v-bd9f2bcc="" data-v-aa558d6e="" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                            class="mr4" style="fill: rgb(42, 125, 225);">
+                                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.69638 13.5299C4.05199 13.1404 4.04399 12.5417 3.67811 12.1619C2.63802 11.0821 2 9.6166 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14H3.26717L3.69638 13.5299ZM1 8C1 9.88557 1.74553 11.597 2.95789 12.8556L1.76434 14.1629C1.47131 14.4838 1.699 15 2.13358 15H8C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8Z">
+                                            </path>
+                                            <path data-v-bd9f2bcc=""
+                                                d="M6 8C6 8.41421 5.66421 8.75 5.25 8.75C4.83579 8.75 4.5 8.41421 4.5 8C4.5 7.58579 4.83579 7.25 5.25 7.25C5.66421 7.25 6 7.58579 6 8Z">
+                                            </path>
+                                            <path data-v-bd9f2bcc=""
+                                                d="M8.75 8C8.75 8.41421 8.41421 8.75 8 8.75C7.58579 8.75 7.25 8.41421 7.25 8C7.25 7.58579 7.58579 7.25 8 7.25C8.41421 7.25 8.75 7.58579 8.75 8Z">
+                                            </path>
+                                            <path data-v-bd9f2bcc=""
+                                                d="M11.5 8C11.5 8.41421 11.1642 8.75 10.75 8.75C10.3358 8.75 10 8.41421 10 8C10 7.58579 10.3358 7.25 10.75 7.25C11.1642 7.25 11.5 7.58579 11.5 8Z">
+                                            </path>
+                                        </svg>
+                                        <div class="community-icons-count" style="color: rgb(42, 125, 225);">2</div>
+                                    </div>
+                                    <div class="community-icon">
+                                        <svg data-v-bd9f2bcc="" data-v-aa558d6e="" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                            class="mr4" style="fill: rgb(233, 37, 37);">
+                                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8 5.79179L7.16516 4.5257C6.75467 3.90318 6.05854 3.5 5.27273 3.5C4.02534 3.5 3 4.5219 3 5.8C3 6.46253 3.27323 7.21871 3.78425 8.03207C4.28965 8.8365 4.98019 9.62153 5.6981 10.3215C6.41239 11.0179 7.13067 11.6079 7.67232 12.0246C7.79109 12.116 7.90097 12.1988 8 12.2722C8.09904 12.1988 8.20892 12.116 8.32768 12.0246C8.86934 11.6079 9.58761 11.0179 10.3019 10.3215C11.0198 9.62153 11.7103 8.8365 12.2157 8.03207C12.7268 7.21871 13 6.46253 13 5.8C13 4.5219 11.9747 3.5 10.7273 3.5C9.94146 3.5 9.24533 3.90318 8.83485 4.5257L8 5.79179ZM8 13.5C8 13.5 2 9.5 2 5.8C2 3.97746 3.46525 2.5 5.27273 2.5C6.0432 2.5 6.75149 2.76846 7.31061 3.21768C7.57757 3.43217 7.81052 3.68786 8 3.97522C8.18948 3.68786 8.42244 3.43217 8.6894 3.21768C9.24851 2.76846 9.9568 2.5 10.7273 2.5C12.5348 2.5 14 3.97746 14 5.8C14 9.5 8 13.5 8 13.5Z">
+                                            </path>
+                                        </svg>
+                                        <div class="community-icons-count" style="color: rgb(233, 37, 37);">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="content-reply-devider">
+                            <div class="community-reply-container">
+                                <div style="margin-right: 8px;">
+                                    <div class="community-reply-avatar">
+                                        <div class="missing-image">
+                                            <svg data-v-bd9f2bcc="" data-v-16c10fa5="" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                class="avatar-no-profile" style="fill: rgb(207, 212, 215);">
+                                                <circle data-v-bd9f2bcc="" cx="8" cy="4.5" r="2.5"></circle>
+                                                <path data-v-bd9f2bcc=""
+                                                    d="M4.11325 10.0801C4.97961 8.78058 6.43814 8 8 8C9.56186 8 11.0204 8.78058 11.8868 10.0801L12.0826 10.3739C13.1159 11.9239 12.0048 14 10.142 14H5.85801C3.99518 14 2.88408 11.9239 3.91739 10.3739L4.11325 10.0801Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="community-reply-name-container">
+                                        <span class="community-reply-name">유저1</span>
+                                        <div class="community-reply-subname">삼성전자</div>
+                                    </div>
+                                    <p class="community-reply-content">
+                                        공정설계 직무의 가장 큰 미션은 반도체 소자를 개발하는 것인데요.
+                                        특히 Design rule과 Spice model을 만드는 일을 하고 있습니다. 흔히 파운드리 관련 신문기
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="community-to-more">
+                                <div>+ 더보기</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <footer>
             <div class="grid">
                 <div class="footer-container">
@@ -397,5 +751,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="header.js"></script>
+<script src="banner.js"></script>
 
 </html>
