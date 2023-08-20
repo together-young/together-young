@@ -2,9 +2,9 @@ $(function () {
   // 서치창 placeholder 랜덤변수
   var randomTexts = [
     '"축구"를 입력해보세요.',
+    '"서울"을 입력해보세요.',
     "어떤 모임을 찾으시나요?",
     "기업 이름을 입력해보세요.",
-    '"서울"을 입력해보세요.',
     "어느 지역에 살고 계신가요?",
   ];
   var randomIndex = Math.floor(Math.random() * randomTexts.length);
