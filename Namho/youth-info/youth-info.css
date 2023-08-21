@@ -401,6 +401,34 @@ header {
     z-index: 2;
 }
 
+.header-login {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    height: 42px;
+    justify-content: center;
+}
+
+.header-login-btn {
+    color: rgb(148, 155, 160);
+    border: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 28px;
+    line-height: 20px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+}
+
+.header-login-btn:hover {
+    background: #f3f4f5;
+}
+
 .header-icons-division {
     display: flex;
     align-items: center;
