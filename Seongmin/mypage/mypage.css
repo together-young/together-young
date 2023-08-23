@@ -1,0 +1,1140 @@
+/* 광범위 지정 CSS */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+article,
+aside,
+body,
+div,
+footer,
+header,
+section {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: Pretendard Variable, Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, Helvetica Neue, Apple SD Gothic Neo, Noto Sans KR,
+    Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+input:not([type="range"]):not([type="color"]) {
+  writing-mode: horizontal-tb !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.grid {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.mr4 {
+  margin-right: 4px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+/* Header CSS ===============================================================================================================================================================*/
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  max-width: 1108px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-nav-container-left {
+  display: inherit;
+  align-items: center;
+}
+
+.header-logo {
+  display: inherit;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin: 26px;
+}
+
+.header-nav-menu {
+  color: #595f63;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  list-style: none;
+}
+
+.header-nav-menu:not(:first-child) {
+  margin-left: 24px;
+}
+
+.header-nav-continer-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-bar {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.search-input {
+  display: inline-block;
+  background-color: #f3f4f5;
+  color: #3c4144;
+  border: 0;
+  border-radius: 4px;
+  zoom: 1;
+  height: 100%;
+  padding: 10px 36px 10px 58px;
+}
+
+.search-input::placeholder {
+  color: #949ba0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.input-erase-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.erase-all {
+  cursor: pointer;
+  display: none;
+  margin: 0 4px 0 8px;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.search-input-icon {
+  left: 0;
+  width: max-content;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-search {
+  display: block;
+  margin-left: 14px;
+  opacity: 0.8;
+  position: relative;
+  z-index: 2;
+}
+
+.header-icons-division {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons-division ul {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.header-icon {
+  margin-right: 8px;
+}
+
+.icons-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  height: 28px;
+  padding: 2px;
+  width: 28px;
+}
+
+.avatar-profile {
+  height: 24px;
+  inline-size: 24px;
+  width: 24px;
+  display: block;
+  border-radius: 100%;
+  background: #f3f4f5;
+}
+
+.profile-setter {
+  display: flex;
+  position: absolute;
+}
+
+.avatar-no-profile {
+  overflow: hidden;
+  background: transparent;
+}
+
+.header-split-line {
+  border: 0;
+  margin: 0;
+  border-top: 1px;
+  height: 0;
+  width: inherit;
+  border-style: solid;
+  border-color: #f3f4f5;
+  opacity: 1;
+}
+
+/* Sub-Header CSS ===============================================================================================================================================================*/
+.sub-header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  transition: all 0.1s;
+  width: 100vw;
+  z-index: 10;
+  top: 69px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.02);
+}
+
+.sub-header-box {
+  max-width: 1140px;
+  background-color: inherit;
+}
+
+.sub-header-menu {
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f3f4f5;
+}
+
+.first-menu {
+  display: none;
+}
+
+.second-menu {
+  display: none;
+}
+
+.sub-header-menu-btn {
+  background: none;
+  border: 0;
+  color: #adb3b8;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  min-width: auto;
+  outline: 0;
+  padding: 4px;
+  width: fit-content;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sub-header-menu-btn:not(:last-child) {
+  margin-right: 12px;
+}
+
+.sub-header-menu-btn button {
+  background: none;
+  border: 0;
+  color: #adb3b8;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  min-width: auto;
+  outline: 0;
+  padding: 4px;
+  width: fit-content;
+  height: 43px;
+}
+
+.hover-font-weight-600:hover {
+  font-weight: 600;
+  color: #595f63;
+}
+
+/* 메인 컨테이너 작성해주세요 */
+.main-container {
+  min-height: calc(100vh - 342px);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+/* Footer CSS ===============================================================================================================================================================*/
+footer {
+  padding: 48px 0 60px;
+  border: 1px solid #eaecee;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
+.footer-font {
+  color: rgb(118, 125, 130);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.footer-container {
+  flex: 0 0 100%;
+  max-width: 1108px;
+  display: flex;
+}
+
+.footer-container h2 {
+  color: rgb(32, 35, 37);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.customer-center-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 184px;
+  width: 280px;
+}
+
+.work-time-info {
+  margin-top: 20px;
+}
+
+.customer-center-btn {
+  background-color: transparent;
+  border: 1px solid #949ba0;
+  color: #767d82;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  line-height: 20px;
+  min-width: 49px;
+  padding: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.customer-center-icon {
+  background-color: transparent;
+  cursor: auto;
+  margin-right: 2px;
+  display: flex;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.service-box {
+  cursor: pointer;
+  width: max-content;
+  margin-top: 12px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 418px;
+}
+
+.info-sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+}
+
+.section-devider {
+  border-color: rgb(234, 236, 238);
+  border-style: solid;
+  border-left: 1px;
+  height: inherit;
+  width: 0;
+  margin: 0 32px;
+}
+
+.link-right {
+  display: flex;
+  float: right;
+}
+
+.link-right li {
+  margin-right: 8px;
+}
+
+/* mypage CSS ===============================================================================================================================================================*/
+
+.mypageContainer {
+  background-color: rgb(255, 255, 255);
+  min-height: calc(100vh - 324px);
+  height: 100%;
+  width: 100%;
+  max-width: 1140px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  padding-top: 0 !important;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.asideMenucontainer {
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  position: relative;
+  flex: 0 0 25%;
+  max-width: 25%;
+  width: 100%;
+}
+
+.mypageAsideMenu {
+  padding: 12px;
+  position: relative;
+  width: 259px;
+}
+
+.profile {
+  display: flex;
+  margin-bottom: 32px !important;
+}
+
+.imageUploadContainer {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  line-height: 68px;
+  text-align: center;
+}
+
+.image {
+  background-image: url(https://cdn.comento.kr/images/illust/illust-photo-upload.svg);
+  width: 48px;
+  height: 48px;
+  line-height: 68px;
+  background-size: 100% 100%;
+  border-radius: 100%;
+  display: block;
+}
+
+.imageItem {
+  display: flex;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imageUploadContainer input[type="file"] {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.input {
+  appearance: none;
+}
+
+.userInfoConatiner {
+  overflow: hidden;
+  cursor: pointer !important;
+  margin-left: 4px !important;
+}
+
+.userName {
+  color: #202325;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  margin-bottom: 2px !important;
+}
+
+.userEmailContainer {
+  align-items: center;
+  cursor: pointer !important;
+  display: flex;
+}
+
+.userEmail {
+  color: #767d82;
+  line-height: 16px !important;
+  font-size: 12px;
+  font-weight: 400;
+  word-break: keep-all;
+  word-wrap: normal !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.socialIconContainer {
+  height: 14px;
+  min-width: 14px;
+  background: #fee500;
+  align-items: center;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  margin-left: 6px !important;
+  margin-top: 2px !important;
+}
+
+.socialIcon {
+  border-style: none;
+  max-width: 100%;
+}
+
+a {
+  background-color: transparent;
+}
+
+.editProfile,
+.mySchedules,
+.myPosts {
+  border-radius: 8px;
+  padding: 12px 4px;
+  align-items: center;
+  display: flex !important;
+  justify-content: space-between;
+  cursor: pointer !important;
+  color: #202325;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  font-weight: 400 !important;
+  position: relative !important;
+}
+
+.borderDividingLine {
+  border-color: #eaecee;
+  border-style: solid;
+  border-top: 1px;
+  height: 0;
+  width: inherit;
+  margin-bottom: 12px !important;
+  margin-top: 12px !important;
+}
+
+.profileContentsContainer {
+  padding: 12px 24px !important;
+  flex: 0 0 75%;
+  max-width: 75%;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.profileContentsHeader {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.profileContentsTitle {
+  align-items: center;
+  display: flex !important;
+  height: 29px;
+  justify-content: space-between;
+}
+
+.personalInfoSetting {
+  color: #3c4144;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.profileContentsOptions {
+  background-color: #ffffff;
+  max-width: 1140px;
+  margin: 8px -12px 24px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 !important;
+  border-bottom: 0 !important;
+  margin-left: -8px;
+}
+
+.myProfileContainer {
+  margin-right: 12px;
+  align-items: center;
+  display: flex !important;
+  position: relative;
+}
+
+.myProfileButton,
+.membershipWithdrawalButton {
+  margin: 8px 0 9px;
+  min-width: 40px;
+  color: #040505;
+  font-weight: 500;
+  background: none !important;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  outline: 0;
+  padding: 4px;
+  width: fit-content;
+  border-radius: 6px;
+  height: 30px !important;
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.active::after {
+  background: #595f63 !important;
+  bottom: -1px;
+  content: "";
+  display: flex;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.membershipWithdrawalButton {
+  color: #adb3b8;
+}
+
+.profileContentsBody {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.profileContents {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileContents .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userInformationContainer {
+  align-items: center;
+  display: flex;
+  width: 200px;
+}
+
+.userInformationContainer .imageUploadContainer {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin-right: 20px;
+  cursor: pointer;
+  line-height: 68px;
+  position: relative;
+  text-align: center;
+}
+
+.userInformationContainer .image {
+  background-image: url(https://cdn.comento.kr/images/illust/illust-photo-upload.svg);
+  width: 90px;
+  height: 90px;
+  background-size: 100% 100%;
+  line-height: 68px;
+  border-radius: 100%;
+  display: block;
+}
+
+.userInformationContainer .imageItem {
+  display: flex;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.userInformationContainer .input[type="file"] {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.profile .userName {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: #202325;
+  word-wrap: break-word;
+  word-break: keep-all;
+  font-weight: 600 !important;
+  margin-right: 12px !important;
+}
+
+.serviceInformationContainer {
+  width: 382px;
+  display: flex !important;
+}
+
+.numPostContainer,
+.numReplyContainer,
+.numScheduleContainer {
+  border-right: 1px solid #eaecee;
+  justify-content: center;
+  width: 100%;
+  color: rgb(4, 5, 5);
+  text-align: center;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.numPostTitle,
+.numReplyTitle,
+.numScheduleTitle {
+  color: rgb(173, 179, 184);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  margin-top: 16px !important;
+}
+
+.editNicknameContainer {
+  width: 100%;
+  height: 58px;
+  margin-top: 32px;
+  align-items: center;
+  display: flex !important;
+}
+
+.editNicknameTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  margin-bottom: 14px !important;
+}
+
+.editNicknameBody {
+  margin-left: 12px !important;
+  display: flex;
+}
+
+.nicknameBox {
+  width: 205px;
+  flex: 1;
+  position: relative;
+  text-align: left;
+  border: 1px solid #e1e4e6;
+  border-radius: 4px;
+  padding: 0 16px;
+  color: #3c4144;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.verifyNickname {
+  height: 40px;
+  margin-left: 4px;
+  background-color: transparent;
+  border: 1px solid #2a7de1;
+  color: #2a7de1;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  min-width: 56px;
+  padding: 0 14px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.saveNickname {
+  height: 40px;
+  margin-left: 4px;
+  background-color: #d4e5f9;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  min-width: 56px;
+  padding: 0 14px;
+  cursor: not-allowed !important;
+  align-items: center;
+  border: none;
+  color: #fff;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.nicknameUpdateMessageContainer {
+  height: 14px;
+  color: rgb(42, 125, 225);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  margin-top: 4px !important;
+  margin-left: 100px; /* 임시로 추가함 */
+}
+
+.notificationSettingTitle {
+  color: #3c4144;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  margin-bottom: 32px !important;
+  margin-top: 32px !important;
+}
