@@ -562,7 +562,7 @@ header {
     margin-top: 70px;
 }
 
-.new-color {
+.new-background-color {
     background-color: #f7f8f8;
 }
 
@@ -571,6 +571,17 @@ header {
     justify-content: center;
 }
 
+.no-avatar {
+    background: #f3f4f5;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 포스트 CSS */
 .post-container {
     width: 730px;
     background-color: #fff;
@@ -633,6 +644,8 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: relative;
+    width: 28px;
+    height: 28px;
 }
 
 .post-action-btn {
@@ -740,6 +753,10 @@ header {
     padding: 4px;
 }
 
+.post-bottom-indicator-btn:hover {
+    background: #f3f4f5;
+}
+
 .post-bottom-svg {
     cursor: inherit;
     margin: 2px 4px 2px 0;
@@ -767,6 +784,7 @@ header {
     line-height: 20px;
 }
 
+/* 댓글 작성 CSS */
 .comment-container {
     width: 730px;
     display: block;
@@ -807,6 +825,10 @@ header {
     cursor: pointer;
 }
 
+#hidden-comment-wrap {
+    display: none;
+}
+
 .comment-top-container {
     display: flex;
     align-items: center;
@@ -830,16 +852,6 @@ header {
     text-align: center;
     border-radius: 100%;
     overflow: hidden;
-}
-
-.no-avatar {
-    background: #f3f4f5;
-    height: 48px;
-    width: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .comment-user-name-container {
@@ -883,6 +895,160 @@ header {
     padding: 16px;
     resize: none;
     width: 100%;
+}
+
+.comment-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.type-count-container {
+    display: flex;
+    align-items: center;
+}
+
+.type-count-indi {
+    color: rgb(148, 155, 160);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-right: 4px;
+}
+
+#type-counter {
+    color: rgb(89, 95, 99);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.comment-summit-btn {
+    border: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    background-color: #d4e5f9;
+    color: #2a7de1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.comment-summit-btn:disabled {
+    background-color: #f7fafe;
+    color: #d4e5f9;
+    cursor: not-allowed;
+}
+
+/* 댓글 CSS */
+.reply-container {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.reply-count-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.reply-count {
+    color: rgb(89, 95, 99);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.reply-article {
+    border: 1px solid rgb(234, 236, 238);
+    padding: 20px;
+    width: 730px;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    background-color: #fff;
+}
+
+.reply-article:not(:first-child) {
+    margin-top: 40px;
+}
+
+.reply-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reply-user-container {
+    padding: 2px 0 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.reply-login-user-avatar {
+    margin-right: 8px;
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.reply-user-name-container {
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.reply-user-name {
+    color: inherit;
+    font-weight: 600;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    font-size: 16px;
+    letter-spacing: .02em;
+    line-height: 25px;
+}
+
+.reply-content {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    line-height: 25px;
+    word-break: break-word !important;
+    color: rgb(32, 35, 37);
+}
+
+.reply-date {
+    color: rgb(207, 212, 215);
+    margin-bottom: 8px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 /* Footer CSS ===============================================================================================================================================================*/

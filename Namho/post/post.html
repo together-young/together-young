@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>post</title>
     <link data-n-head="ssr" rel="preload" as="style"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
         crossorigin="anonymous">
@@ -328,28 +328,31 @@
                     <div class="post-bottom-container">
                         <div class="post-bottom-count-container">
                             <div>
-                                <button class="post-bottom-indicator-btn">
+                                <button class="post-bottom-indicator-btn" id="post-like">
                                     <svg data-v-bd9f2bcc="" data-v-fbfe33cc="" width="16" height="16"
                                         viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
-                                        class="post-bottom-svg" style="fill: rgb(148, 155, 160);">
+                                        class="post-bottom-svg" id="post-like-svg" style="fill: rgb(148, 155, 160);">
                                         <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
                                             d="M8 5.79179L7.16516 4.5257C6.75467 3.90318 6.05854 3.5 5.27273 3.5C4.02534 3.5 3 4.5219 3 5.8C3 6.46253 3.27323 7.21871 3.78425 8.03207C4.28965 8.8365 4.98019 9.62153 5.6981 10.3215C6.41239 11.0179 7.13067 11.6079 7.67232 12.0246C7.79109 12.116 7.90097 12.1988 8 12.2722C8.09904 12.1988 8.20892 12.116 8.32768 12.0246C8.86934 11.6079 9.58761 11.0179 10.3019 10.3215C11.0198 9.62153 11.7103 8.8365 12.2157 8.03207C12.7268 7.21871 13 6.46253 13 5.8C13 4.5219 11.9747 3.5 10.7273 3.5C9.94146 3.5 9.24533 3.90318 8.83485 4.5257L8 5.79179ZM8 13.5C8 13.5 2 9.5 2 5.8C2 3.97746 3.46525 2.5 5.27273 2.5C6.0432 2.5 6.75149 2.76846 7.31061 3.21768C7.57757 3.43217 7.81052 3.68786 8 3.97522C8.18948 3.68786 8.42244 3.43217 8.6894 3.21768C9.24851 2.76846 9.9568 2.5 10.7273 2.5C12.5348 2.5 14 3.97746 14 5.8C14 9.5 8 13.5 8 13.5Z">
                                         </path>
                                     </svg>
-                                    <div class="post-bottom-count-indi" style="color: rgb(148, 155, 160);">0</div>
+                                    <div class="post-bottom-count-indi" id="post-like-count"
+                                        style="color: rgb(148, 155, 160);">0</div>
                                 </button>
                             </div>
                             <hr class="post-bottom-divider">
                             <div>
-                                <button class="post-bottom-indicator-btn">
+                                <button class="post-bottom-indicator-btn" id="post-bookmark">
                                     <svg data-v-bd9f2bcc="" data-v-fbfe33cc="" width="16" height="16"
                                         viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
-                                        class="post-bottom-svg" style="fill: rgb(148, 155, 160);">
+                                        class="post-bottom-svg" id="post-bookmark-svg"
+                                        style="fill: rgb(148, 155, 160);">
                                         <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
                                             d="M12 3H4V12.5504L6.88646 10.6157C7.56015 10.1642 8.43985 10.1642 9.11354 10.6157L12 12.5504V3ZM4 2C3.44772 2 3 2.44772 3 3V13.4875C3 13.8874 3.44619 14.1255 3.77839 13.9028L7.44323 11.4464C7.78008 11.2206 8.21992 11.2206 8.55677 11.4464L12.2216 13.9028C12.5538 14.1255 13 13.8874 13 13.4875V3C13 2.44772 12.5523 2 12 2H4Z">
                                         </path>
                                     </svg>
-                                    <div class="post-bottom-count-indi" style="color: rgb(148, 155, 160);">11</div>
+                                    <div class="post-bottom-count-indi" id="post-like-count"
+                                        style="color: rgb(148, 155, 160);">0</div>
                                 </button>
                             </div>
                         </div>
@@ -357,7 +360,7 @@
                     </div>
                 </article>
             </div>
-            <div class="new-color">
+            <div class="new-background-color">
                 <div class="grid grid-container">
                     <div class="comment-container">
                         <div class="fake-container">
@@ -368,30 +371,167 @@
                                 작성
                             </button>
                         </div>
-                        <div class="comment-top-container">
-                            <div class="comment-user-container">
-                                <div class="comment-login-user-avatar">
-                                    <div class="no-avatar">
-                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" style="fill:#CFD4D7;" data-v-bd9f2bcc=""
-                                            data-v-16c10fa5="">
-                                            <circle cx="18" cy="11" r="6" data-v-bd9f2bcc=""></circle>
-                                            <path
-                                                d="M8.89065 23.704C10.986 20.7531 14.3809 19 18 19C21.6191 19 25.014 20.7531 27.1094 23.704L27.3942 24.1052C29.7451 27.416 27.3779 32 23.3174 32H12.6826C8.6221 32 6.25494 27.416 8.60575 24.1052L8.89065 23.704Z"
-                                                data-v-bd9f2bcc=""></path>
-                                        </svg>
+                        <div id="hidden-comment-wrap">
+                            <div class="comment-top-container">
+                                <div class="comment-user-container">
+                                    <div class="comment-login-user-avatar">
+                                        <div class="no-avatar">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" style="fill:#CFD4D7;"
+                                                data-v-bd9f2bcc="" data-v-16c10fa5="">
+                                                <circle cx="18" cy="11" r="6" data-v-bd9f2bcc=""></circle>
+                                                <path
+                                                    d="M8.89065 23.704C10.986 20.7531 14.3809 19 18 19C21.6191 19 25.014 20.7531 27.1094 23.704L27.3942 24.1052C29.7451 27.416 27.3779 32 23.3174 32H12.6826C8.6221 32 6.25494 27.416 8.60575 24.1052L8.89065 23.704Z"
+                                                    data-v-bd9f2bcc=""></path>
+                                            </svg>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="comment-user-name-container">
-                                    <div class="comment-user-name">
-                                        sample-user-name
+                                    <div class="comment-user-name-container">
+                                        <div class="comment-user-name">
+                                            sample-user-name
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="comment-content-container">
+                                <textarea class="comment-content" placeholder="내용을 입력해주세요."
+                                    style="max-height: 185px; min-height: 185px; overflow-y: auto;"></textarea>
+                            </div>
+                            <div class="comment-bottom-container">
+                                <div class="type-count-container">
+                                    <div class="type-count-indi">글자수</div>
+                                    <div id="type-counter">0</div>
+                                </div>
+                                <button class="comment-summit-btn" disabled>
+                                    댓글 등록
+                                </button>
+                            </div>
                         </div>
-                        <div class="comment-content-container">
-                            <textarea class="comment-content" placeholder="내용을 입력해주세요."
-                                style="max-height: 185px; min-height: 185px; overflow-y: auto;"></textarea>
+                    </div>
+                </div>
+                <div class="grid grid-container">
+                    <div class="reply-container">
+                        <div class="reply-count-container">
+                            <div class="reply-count">
+                                댓글
+                                <span id="reply-count"></span>
+                            </div>
+                        </div>
+                        <div id="replies">
+                            <article class="reply-article">
+                                <div class="reply-top-container">
+                                    <div class="reply-user-container">
+                                        <div class="reply-login-user-avatar">
+                                            <div class="no-avatar">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="black"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#CFD4D7;"
+                                                    data-v-bd9f2bcc="" data-v-16c10fa5="">
+                                                    <circle cx="18" cy="11" r="6" data-v-bd9f2bcc=""></circle>
+                                                    <path
+                                                        d="M8.89065 23.704C10.986 20.7531 14.3809 19 18 19C21.6191 19 25.014 20.7531 27.1094 23.704L27.3942 24.1052C29.7451 27.416 27.3779 32 23.3174 32H12.6826C8.6221 32 6.25494 27.416 8.60575 24.1052L8.89065 23.704Z"
+                                                        data-v-bd9f2bcc=""></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="reply-user-name-container">
+                                            <div class="reply-user-name">
+                                                sample-user-name
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>
+                                        안녕하세요.
+                                        <br>
+                                        실무를 하다보면 질문으로는 해결되지 않는 고민들이 계속해서 생겨나기 마련인데요.
+                                        <br>
+                                        다른 반도체 직무의 실무자 분들은 현직자와 실시간으로 소통하며 실무 고민을 해결하고
+                                        있습니다.
+                                        <br>
+                                        <br>
+                                        어떻게든 고민을 해결하고 성과를 만들고 싶다면
+                                        <u class="c-application c-typography d-inline-block"
+                                            style="color: rgb(42, 125, 225); cursor: pointer;">
+                                            여기</u>를 눌러 실무PT에 참여해보는 건 어떠세요?
+                                    </p>
+                                </div>
+                                <p class="reply-date">2023.08.23</p>
+                            </article>
+                            <article class="reply-article">
+                                <div class="reply-top-container">
+                                    <div class="reply-user-container">
+                                        <div class="reply-login-user-avatar">
+                                            <div class="no-avatar">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="black"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#CFD4D7;"
+                                                    data-v-bd9f2bcc="" data-v-16c10fa5="">
+                                                    <circle cx="18" cy="11" r="6" data-v-bd9f2bcc=""></circle>
+                                                    <path
+                                                        d="M8.89065 23.704C10.986 20.7531 14.3809 19 18 19C21.6191 19 25.014 20.7531 27.1094 23.704L27.3942 24.1052C29.7451 27.416 27.3779 32 23.3174 32H12.6826C8.6221 32 6.25494 27.416 8.60575 24.1052L8.89065 23.704Z"
+                                                        data-v-bd9f2bcc=""></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="reply-user-name-container">
+                                            <div class="reply-user-name">
+                                                sample-user-name
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quisque sagittis purus sit amet
+                                        volutpat consequat mauris nunc. Eget nulla facilisi etiam dignissim. Scelerisque
+                                        mauris pellentesque pulvinar pellentesque habitant morbi tristique. Morbi quis
+                                        commodo odio aenean. Aliquam faucibus purus in massa. Elementum tempus egestas
+                                        sed sed risus pretium quam. Sed adipiscing diam donec adipiscing tristique risus
+                                        nec feugiat. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Metus
+                                        vulputate eu scelerisque felis imperdiet proin fermentum leo. Cursus eget nunc
+                                        scelerisque viverra mauris in aliquam sem. Erat imperdiet sed euismod nisi
+                                        porta. Auctor elit sed vulputate mi sit.
+                                        <br><br>
+                                        Fames ac turpis egestas integer eget aliquet. Enim tortor at auctor urna nunc id
+                                        cursus metus aliquam. Eget gravida cum sociis natoque. Lobortis mattis aliquam
+                                        faucibus purus. Lacinia quis vel eros donec ac odio tempor orci dapibus.
+                                        Vestibulum morbi blandit cursus risus at ultrices mi tempus. Aliquet sagittis id
+                                        consectetur purus. Amet aliquam id diam maecenas. Pretium aenean pharetra magna
+                                        ac placerat. Lectus magna fringilla urna porttitor rhoncus dolor purus.
+                                        <br><br>
+                                        Non odio euismod lacinia at quis. Sem integer vitae justo eget magna fermentum
+                                        iaculis eu non. Dictum sit amet justo donec enim diam vulputate. Ultricies
+                                        tristique nulla aliquet enim tortor. Nisl rhoncus mattis rhoncus urna neque
+                                        viverra justo nec. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+                                        Magna fringilla urna porttitor rhoncus dolor purus non enim. Quam quisque id
+                                        diam vel quam elementum. Enim lobortis scelerisque fermentum dui. Malesuada
+                                        fames ac turpis egestas integer. Habitant morbi tristique senectus et netus et.
+                                        Ac turpis egestas integer eget aliquet. Nec feugiat in fermentum posuere urna
+                                        nec. Egestas diam in arcu cursus euismod. Nisl nisi scelerisque eu ultrices
+                                        vitae auctor eu augue. Tellus mauris a diam maecenas sed enim ut. Mi in nulla
+                                        posuere sollicitudin aliquam ultrices.
+                                        <br><br>
+                                        Dictum at tempor commodo ullamcorper. Integer eget aliquet nibh praesent
+                                        tristique magna. Dignissim diam quis enim lobortis scelerisque fermentum dui
+                                        faucibus in. Ut tortor pretium viverra suspendisse potenti nullam. Imperdiet
+                                        massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Integer
+                                        enim neque volutpat ac. Lectus arcu bibendum at varius vel pharetra vel turpis.
+                                        Egestas congue quisque egestas diam in arcu cursus euismod quis. Imperdiet sed
+                                        euismod nisi porta. Faucibus turpis in eu mi bibendum neque egestas congue
+                                        quisque. Aenean pharetra magna ac placerat vestibulum lectus.
+                                        <br><br>
+                                        Sed enim ut sem viverra aliquet. Adipiscing enim eu turpis egestas pretium
+                                        aenean pharetra. Feugiat in fermentum posuere urna nec. Nunc sed blandit libero
+                                        volutpat sed cras. Elementum integer enim neque volutpat ac tincidunt vitae
+                                        semper. Tristique senectus et netus et malesuada fames ac turpis. Eu mi bibendum
+                                        neque egestas congue quisque egestas diam. Adipiscing elit ut aliquam purus.
+                                        Tempor nec feugiat nisl pretium fusce. Nisl vel pretium lectus quam id leo in
+                                        vitae.
+                                    </p>
+                                </div>
+                                <p class="reply-date">2023.08.23</p>
+                            </article>
                         </div>
                     </div>
                 </div>
