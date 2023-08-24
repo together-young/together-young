@@ -447,27 +447,19 @@ header {
     background-color: #f3f4f5;
 }
 
-.avatar-profile {
+.header-avatar {
     height: 24px;
-    inline-size: 24px;
     width: 24px;
-    display: block;
+    display: inline-block;
+    position: relative;
     border-radius: 100%;
-    background: #f3f4f5;
-}
-
-.profile-setter {
-    display: flex;
-    position: absolute;
-}
-
-.avatar-no-profile {
     overflow: hidden;
-    background: transparent;
 }
+
 
 .header-user-info-popover-wrap {
     visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -475,10 +467,12 @@ header {
     width: 196px;
     padding-top: 10px;
     z-index: 10;
+    transition: opacity .15s, visibility .15s;
 }
 
 .header-icon:hover .header-user-info-popover-wrap {
     visibility: visible;
+    opacity: 1;
 }
 
 .header-user-info-popover-container {
@@ -1158,13 +1152,139 @@ header {
     color: rgb(32, 35, 37);
 }
 
+.reply-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
 .reply-date {
     color: rgb(207, 212, 215);
-    margin-bottom: 8px;
     position: relative;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.reply-edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.reply-edit-btn:hover {
+    background-color: #f3f4f5;
+}
+
+.reply-edit {
+    display: none;
+}
+
+.reply-edit-container {
+    padding: 20px;
+}
+
+.reply-edit-textarea {
+    background: #fff;
+    border: 0;
+    box-sizing: border-box;
+    color: #3c4144;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    line-height: 25px;
+    resize: none;
+    overflow: auto;
+    width: 100%;
+    min-height: 185px;
+    height: auto;
+    padding: 0;
+}
+
+.reply-edit-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.reply-type-count-container {
+    display: flex;
+    align-items: center;
+}
+
+.reply-type-count-indi {
+    color: rgb(148, 155, 160);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-right: 4px;
+}
+
+.reply-type-counter {
+    color: rgb(89, 95, 99);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.reply-btns-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reply-edit-back {
+    border: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    margin-right: 8px;
+    background-color: #d4e5f9;
+    color: #2a7de1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.reply-summit-btn {
+    border: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    background-color: #d4e5f9;
+    color: #2a7de1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.reply-summit-btn:disabled {
+    background-color: #f7fafe;
+    color: #d4e5f9;
+    cursor: not-allowed;
 }
 
 /* Footer CSS ===============================================================================================================================================================*/

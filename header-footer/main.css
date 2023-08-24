@@ -447,27 +447,18 @@ header {
     background-color: #f3f4f5;
 }
 
-.avatar-profile {
+.header-avatar {
     height: 24px;
-    inline-size: 24px;
     width: 24px;
-    display: block;
+    display: inline-block;
+    position: relative;
     border-radius: 100%;
-    background: #f3f4f5;
-}
-
-.profile-setter {
-    display: flex;
-    position: absolute;
-}
-
-.avatar-no-profile {
     overflow: hidden;
-    background: transparent;
 }
 
 .header-user-info-popover-wrap {
     visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -475,10 +466,12 @@ header {
     width: 196px;
     padding-top: 10px;
     z-index: 10;
+    transition: opacity .15s, visibility .15s;
 }
 
 .header-icon:hover .header-user-info-popover-wrap {
     visibility: visible;
+    opacity: 1;
 }
 
 .header-user-info-popover-container {

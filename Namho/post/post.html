@@ -120,16 +120,17 @@
                                 </li>
                                 <li class="header-icon">
                                     <button class="icons-btn user-profile">
-                                        <i class="avatar-profile"></i>
-                                        <div class="profile-setter">
-                                            <svg data-v-bd9f2bcc="" data-v-16c10fa5="" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
-                                                class="avatar-no-profile" style="fill: rgb(207, 212, 215);">
-                                                <circle data-v-bd9f2bcc="" cx="8" cy="4.5" r="2.5"></circle>
-                                                <path data-v-bd9f2bcc=""
-                                                    d="M4.11325 10.0801C4.97961 8.78058 6.43814 8 8 8C9.56186 8 11.0204 8.78058 11.8868 10.0801L12.0826 10.3739C13.1159 11.9239 12.0048 14 10.142 14H5.85801C3.99518 14 2.88408 11.9239 3.91739 10.3739L4.11325 10.0801Z">
-                                                </path>
-                                            </svg>
+                                        <div class="header-avatar">
+                                            <div class="no-avatar">
+                                                <svg data-v-bd9f2bcc="" data-v-16c10fa5="" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                    style="fill: rgb(207, 212, 215);">
+                                                    <circle data-v-bd9f2bcc="" cx="8" cy="4.5" r="2.5"></circle>
+                                                    <path data-v-bd9f2bcc=""
+                                                        d="M4.11325 10.0801C4.97961 8.78058 6.43814 8 8 8C9.56186 8 11.0204 8.78058 11.8868 10.0801L12.0826 10.3739C13.1159 11.9239 12.0048 14 10.142 14H5.85801C3.99518 14 2.88408 11.9239 3.91739 10.3739L4.11325 10.0801Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </button>
                                     <div class="header-user-info-popover-wrap">
@@ -483,8 +484,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="reply-content">
-                                    <p>
+                                <div class="reply-view">
+                                    <div class="reply-content">
                                         안녕하세요.
                                         <br>
                                         실무를 하다보면 질문으로는 해결되지 않는 고민들이 계속해서 생겨나기 마련인데요.
@@ -497,9 +498,41 @@
                                         <u class="c-application c-typography d-inline-block"
                                             style="color: rgb(42, 125, 225); cursor: pointer;">
                                             여기</u>를 눌러 실무PT에 참여해보는 건 어떠세요?
-                                    </p>
+                                    </div>
+                                    <div class="reply-bottom-container">
+                                        <p class="reply-date">2023.08.23</p>
+                                        <button class="reply-edit-btn">
+                                            <?xml version="1.0" ?>
+                                            <svg id="Layer_1"
+                                                style="enable-background:new 0 0 24 24; fill:rgb(119, 124, 128);"
+                                                version="1.1" width="18" height="18" viewBox="0 0 24 24"
+                                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M19.607,18.746c0,0.881-0.716,1.624-1.597,1.624H5.231c-0.881,0-1.597-0.743-1.597-1.624V5.967  c0-0.881,0.716-1.571,1.597-1.571h7.454V3.332H5.231c-1.468,0-2.662,1.168-2.662,2.636v12.778c0,1.468,1.194,2.688,2.662,2.688  h12.778c1.468,0,2.662-1.221,2.662-2.688v-7.428h-1.065V18.746z" />
+                                                <path
+                                                    d="M20.807,3.17c-0.804-0.805-2.207-0.805-3.012,0l-7.143,7.143c-0.068,0.068-0.117,0.154-0.14,0.247L9.76,13.571  c-0.045,0.181,0.008,0.373,0.14,0.506c0.101,0.101,0.237,0.156,0.376,0.156c0.043,0,0.086-0.005,0.129-0.016l3.012-0.753  c0.094-0.023,0.179-0.072,0.247-0.14l7.143-7.143c0.402-0.402,0.624-0.937,0.624-1.506S21.21,3.572,20.807,3.17z M13.016,12.467  l-2.008,0.502l0.502-2.008l5.909-5.909l1.506,1.506L13.016,12.467z M20.054,5.428l-0.376,0.376l-1.506-1.506l0.376-0.376  c0.402-0.402,1.104-0.402,1.506,0c0.201,0.201,0.312,0.468,0.312,0.753C20.366,4.96,20.255,5.227,20.054,5.428z" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-                                <p class="reply-date">2023.08.23</p>
+                                <div class="reply-edit">
+                                    <textarea class="reply-edit-textarea" placeholder="댓글을 수정해주세요."></textarea>
+                                    <div class="reply-edit-bottom-container">
+                                        <div class="reply-type-count-container">
+                                            <div class="reply-type-count-indi">글자수</div>
+                                            <div class="reply-type-counter">0</div>
+                                        </div>
+                                        <div class="reply-btns-container">
+                                            <button class="reply-edit-back">
+                                                취소
+                                            </button>
+                                            <button class="reply-summit-btn">
+                                                댓글 등록
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </article>
                             <article class="reply-article">
                                 <div class="reply-top-container">
@@ -523,57 +556,111 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="reply-content">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                <div class="reply-view">
+                                    <div class="reply-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor
                                         incididunt ut labore et dolore magna aliqua. Quisque sagittis purus sit amet
-                                        volutpat consequat mauris nunc. Eget nulla facilisi etiam dignissim. Scelerisque
-                                        mauris pellentesque pulvinar pellentesque habitant morbi tristique. Morbi quis
-                                        commodo odio aenean. Aliquam faucibus purus in massa. Elementum tempus egestas
-                                        sed sed risus pretium quam. Sed adipiscing diam donec adipiscing tristique risus
-                                        nec feugiat. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Metus
-                                        vulputate eu scelerisque felis imperdiet proin fermentum leo. Cursus eget nunc
+                                        volutpat consequat mauris nunc. Eget nulla facilisi etiam dignissim.
+                                        Scelerisque
+                                        mauris pellentesque pulvinar pellentesque habitant morbi tristique. Morbi
+                                        quis
+                                        commodo odio aenean. Aliquam faucibus purus in massa. Elementum tempus
+                                        egestas
+                                        sed sed risus pretium quam. Sed adipiscing diam donec adipiscing tristique
+                                        risus
+                                        nec feugiat. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras.
+                                        Metus
+                                        vulputate eu scelerisque felis imperdiet proin fermentum leo. Cursus eget
+                                        nunc
                                         scelerisque viverra mauris in aliquam sem. Erat imperdiet sed euismod nisi
                                         porta. Auctor elit sed vulputate mi sit.
                                         <br><br>
-                                        Fames ac turpis egestas integer eget aliquet. Enim tortor at auctor urna nunc id
-                                        cursus metus aliquam. Eget gravida cum sociis natoque. Lobortis mattis aliquam
+                                        Fames ac turpis egestas integer eget aliquet. Enim tortor at auctor urna
+                                        nunc id
+                                        cursus metus aliquam. Eget gravida cum sociis natoque. Lobortis mattis
+                                        aliquam
                                         faucibus purus. Lacinia quis vel eros donec ac odio tempor orci dapibus.
-                                        Vestibulum morbi blandit cursus risus at ultrices mi tempus. Aliquet sagittis id
-                                        consectetur purus. Amet aliquam id diam maecenas. Pretium aenean pharetra magna
+                                        Vestibulum morbi blandit cursus risus at ultrices mi tempus. Aliquet
+                                        sagittis id
+                                        consectetur purus. Amet aliquam id diam maecenas. Pretium aenean pharetra
+                                        magna
                                         ac placerat. Lectus magna fringilla urna porttitor rhoncus dolor purus.
                                         <br><br>
-                                        Non odio euismod lacinia at quis. Sem integer vitae justo eget magna fermentum
+                                        Non odio euismod lacinia at quis. Sem integer vitae justo eget magna
+                                        fermentum
                                         iaculis eu non. Dictum sit amet justo donec enim diam vulputate. Ultricies
                                         tristique nulla aliquet enim tortor. Nisl rhoncus mattis rhoncus urna neque
-                                        viverra justo nec. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+                                        viverra justo nec. Diam in arcu cursus euismod quis viverra nibh cras
+                                        pulvinar.
                                         Magna fringilla urna porttitor rhoncus dolor purus non enim. Quam quisque id
                                         diam vel quam elementum. Enim lobortis scelerisque fermentum dui. Malesuada
-                                        fames ac turpis egestas integer. Habitant morbi tristique senectus et netus et.
-                                        Ac turpis egestas integer eget aliquet. Nec feugiat in fermentum posuere urna
+                                        fames ac turpis egestas integer. Habitant morbi tristique senectus et netus
+                                        et.
+                                        Ac turpis egestas integer eget aliquet. Nec feugiat in fermentum posuere
+                                        urna
                                         nec. Egestas diam in arcu cursus euismod. Nisl nisi scelerisque eu ultrices
-                                        vitae auctor eu augue. Tellus mauris a diam maecenas sed enim ut. Mi in nulla
+                                        vitae auctor eu augue. Tellus mauris a diam maecenas sed enim ut. Mi in
+                                        nulla
                                         posuere sollicitudin aliquam ultrices.
                                         <br><br>
                                         Dictum at tempor commodo ullamcorper. Integer eget aliquet nibh praesent
                                         tristique magna. Dignissim diam quis enim lobortis scelerisque fermentum dui
                                         faucibus in. Ut tortor pretium viverra suspendisse potenti nullam. Imperdiet
-                                        massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Integer
-                                        enim neque volutpat ac. Lectus arcu bibendum at varius vel pharetra vel turpis.
-                                        Egestas congue quisque egestas diam in arcu cursus euismod quis. Imperdiet sed
+                                        massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada.
+                                        Integer
+                                        enim neque volutpat ac. Lectus arcu bibendum at varius vel pharetra vel
+                                        turpis.
+                                        Egestas congue quisque egestas diam in arcu cursus euismod quis. Imperdiet
+                                        sed
                                         euismod nisi porta. Faucibus turpis in eu mi bibendum neque egestas congue
                                         quisque. Aenean pharetra magna ac placerat vestibulum lectus.
                                         <br><br>
                                         Sed enim ut sem viverra aliquet. Adipiscing enim eu turpis egestas pretium
-                                        aenean pharetra. Feugiat in fermentum posuere urna nec. Nunc sed blandit libero
+                                        aenean pharetra. Feugiat in fermentum posuere urna nec. Nunc sed blandit
+                                        libero
                                         volutpat sed cras. Elementum integer enim neque volutpat ac tincidunt vitae
-                                        semper. Tristique senectus et netus et malesuada fames ac turpis. Eu mi bibendum
+                                        semper. Tristique senectus et netus et malesuada fames ac turpis. Eu mi
+                                        bibendum
                                         neque egestas congue quisque egestas diam. Adipiscing elit ut aliquam purus.
-                                        Tempor nec feugiat nisl pretium fusce. Nisl vel pretium lectus quam id leo in
+                                        Tempor nec feugiat nisl pretium fusce. Nisl vel pretium lectus quam id leo
+                                        in
                                         vitae.
-                                    </p>
+                                    </div>
+                                    <div class="reply-bottom-container">
+                                        <p class="reply-date">2023.08.23</p>
+                                        <button class="reply-edit-btn">
+                                            <?xml version="1.0" ?>
+                                            <svg id="Layer_1"
+                                                style="enable-background:new 0 0 24 24; fill:rgb(119, 124, 128);"
+                                                version="1.1" width="18" height="18" viewBox="0 0 24 24"
+                                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M19.607,18.746c0,0.881-0.716,1.624-1.597,1.624H5.231c-0.881,0-1.597-0.743-1.597-1.624V5.967  c0-0.881,0.716-1.571,1.597-1.571h7.454V3.332H5.231c-1.468,0-2.662,1.168-2.662,2.636v12.778c0,1.468,1.194,2.688,2.662,2.688  h12.778c1.468,0,2.662-1.221,2.662-2.688v-7.428h-1.065V18.746z" />
+                                                <path
+                                                    d="M20.807,3.17c-0.804-0.805-2.207-0.805-3.012,0l-7.143,7.143c-0.068,0.068-0.117,0.154-0.14,0.247L9.76,13.571  c-0.045,0.181,0.008,0.373,0.14,0.506c0.101,0.101,0.237,0.156,0.376,0.156c0.043,0,0.086-0.005,0.129-0.016l3.012-0.753  c0.094-0.023,0.179-0.072,0.247-0.14l7.143-7.143c0.402-0.402,0.624-0.937,0.624-1.506S21.21,3.572,20.807,3.17z M13.016,12.467  l-2.008,0.502l0.502-2.008l5.909-5.909l1.506,1.506L13.016,12.467z M20.054,5.428l-0.376,0.376l-1.506-1.506l0.376-0.376  c0.402-0.402,1.104-0.402,1.506,0c0.201,0.201,0.312,0.468,0.312,0.753C20.366,4.96,20.255,5.227,20.054,5.428z" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-                                <p class="reply-date">2023.08.23</p>
+                                <div class="reply-edit">
+                                    <textarea class="reply-edit-textarea" placeholder="댓글을 수정해주세요."></textarea>
+                                    <div class="reply-edit-bottom-container">
+                                        <div class="reply-type-count-container">
+                                            <div class="reply-type-count-indi">글자수</div>
+                                            <div class="reply-type-counter">0</div>
+                                        </div>
+                                        <div class="reply-btns-container">
+                                            <button class="reply-edit-back">
+                                                취소
+                                            </button>
+                                            <button class="reply-summit-btn">
+                                                댓글 등록
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </article>
                         </div>
                     </div>
