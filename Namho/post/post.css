@@ -1202,7 +1202,7 @@ header {
     letter-spacing: .02em;
     line-height: 25px;
     resize: none;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     min-height: 185px;
     height: auto;
