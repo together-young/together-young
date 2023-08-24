@@ -68,5 +68,59 @@ $(function () {
     $("#reply-count").text(replyCount);
   }
 
-  // 댓글 추가 시 댓글 수 +1 추가 되도록 후일에 구현하여야 함
+  // 댓글 추가 시 댓글 수 +1 추가 되도록 후일에 구현하여야 함 혹은 댓글 작성시 페이지 새로고침 필요 //
+
+  // 댓글 수정 버튼을 누를시 textarea로 화면 전환 및 댓글 내용이 수정창으로 복사(서버 접속 최소화를 위함)
+  $(".reply-edit-btn").on("click", function () {
+    var replyContainer = $(this).closest(".reply-article");
+    var replyView = replyContainer.find(".reply-view");
+    var replyEdit = replyContainer.find(".reply-edit");
+
+    var replyContent = replyView.find(".reply-content")[0].innerText;
+    var replyTextarea = replyEdit.find(".reply-edit-textarea");
+
+    replyTextarea.val(replyContent);
+
+    replyView.hide();
+    replyEdit.show();
+
+    // textarea 높이 조절(제일 중요)
+    replyTextarea[0].style.height = "auto";
+    replyTextarea[0].style.height = replyTextarea[0].scrollHeight + "px";
+  });
+
+  // 취소 버튼 누를 시 원상 복귀
+  $(".reply-edit-back").on("click", function () {
+    var replyContainer = $(this).closest(".reply-article");
+    var replyView = replyContainer.find(".reply-view");
+    var replyEdit = replyContainer.find(".reply-edit");
+
+    replyEdit.hide();
+    replyView.show();
+  });
+
+  // 댓글 작성버튼 활성화/비활성화 여부
+  const replyBtn = $(".reply-summit-btn");
+
+  function toggleButtonState(isEnabled) {
+    replyBtn.prop("disabled", !isEnabled);
+  }
+
+  $(".reply-edit-textarea").on("input", function () {
+    const text = $(this).val();
+    const textLength = text.length;
+
+    toggleButtonState(textLength > 0);
+  });
+
+  const $textareas = document.querySelectorAll(".reply-edit-textarea");
+
+  $textareas.forEach(($textarea) => {
+    $textarea.addEventListener("input", (event) => {
+      const $target = event.target;
+
+      $target.style.height = "auto"; // 높이 초기화
+      $target.style.height = $target.scrollHeight + "px"; // 스크롤 높이 계산
+    });
+  });
 });
