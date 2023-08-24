@@ -855,11 +855,29 @@ header {
     transform: translateY(-10px);
 }
 
+#hover-green.active {
+    background-color: #25C481;
+    transform: translateY(-10px);
+}
+
+#hover-blue.active {
+    background-color: #2A7DE1;
+    transform: translateY(-10px);
+}
+
 .card-inside-container:hover .card-title {
     color: #fff;
 }
 
+.card-inside-container.active .card-title {
+    color: #fff;
+}
+
 .card-inside-container:hover .card-content {
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.card-inside-container.active .card-content {
     color: hsla(0, 0%, 100%, .7);
 }
 
@@ -901,11 +919,11 @@ header {
     color: rgb(89, 95, 99);
     font-weight: 400;
     min-height: 40px;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     position: relative;
     font-size: 14px;
     line-height: 20px;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     word-wrap: break-word;
     display: -webkit-box;
@@ -926,7 +944,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 8px;
 }
 
 .rating-group {
@@ -979,6 +997,21 @@ header {
 .change-page:hover {
     color: rgb(4, 5, 5);
     font-weight: 500;
+}
+
+.community-articles-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-articles-wrap {
+    display: none;
+    flex-direction: column;
+}
+
+.ideas-articles-wrap {
+    display: none;
+    flex-direction: column;
 }
 
 /* Footer CSS ===============================================================================================================================================================*/
