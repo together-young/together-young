@@ -294,6 +294,7 @@ header {
 .header-logo {
     display: inherit;
     align-items: center;
+    cursor: pointer;
 }
 
 .header-nav {
