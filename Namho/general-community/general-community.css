@@ -258,6 +258,16 @@ hr {
     max-width: 1140px;
 }
 
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
+.caption1 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px
+}
+
 .mr4 {
     margin-right: 4px;
 }
@@ -323,6 +333,11 @@ header {
 
 .header-nav-menu:not(:first-child) {
     margin-left: 24px;
+}
+
+.header-nav-menu .to-first {
+    color: #2A7DE1;
+    font-weight: 600;
 }
 
 .header-nav-continer-right {
@@ -622,7 +637,7 @@ header {
 }
 
 .first-menu {
-    display: none;
+    display: flex;
 }
 
 .second-menu {
@@ -697,6 +712,59 @@ header {
     color: #595f63;
 }
 
+/* Main CSS ============================================================================================================================================================== */
+.main-container {
+    min-height: calc(100vh - 342px);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 114px;
+}
+
+.inside-container {
+    margin-top: 36px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar-container {
+    display: flex;
+    padding: 0 12px;
+    max-width: 25%;
+    flex: 0 0 25%;
+}
+
+.login-container {
+    position: fixed;
+    border: 1px solid #eaecee;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.login-user-container {
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login-user-avatar {
+    margin-right: 10px;
+    height: 68px;
+    width: 68px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
 .no-avatar {
     background: #f3f4f5;
     height: 100%;
@@ -707,17 +775,165 @@ header {
     position: relative;
 }
 
-/* 메인 컨테이너 작성해주세요 */
-.main-container {
-    min-height: calc(100vh - 342px);
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
+.need-login {
+    color: #202325;
+    line-height: 150%;
+    letter-spacing: .02em;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    word-wrap: break-word;
+    word-break: keep-all;
+    margin: 0 0 6px 0;
+    padding: 0;
 }
 
+.to-mypage {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    background-color: #2A7DE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 0;
+    margin: 16px 0;
+}
+
+.contents-container {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 포스트 */
+.community-post-container {
+    border: 1px solid #eaecee;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+}
+
+.community-post-inside-con {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.post-title {
+    color: rgb(4, 5, 5);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    margin-bottom: 12px;
+}
+
+.post-content {
+    color: rgb(89, 95, 99);
+    font-weight: 400;
+    min-height: 40px;
+    margin-bottom: 24px;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+.more-text {
+    color: #a7852a;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-bottom-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-rating {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-rating:last-child {
+    margin-right: 0;
+}
+
+.post-icon {
+    margin-right: 4px;
+    background: transparent;
+    cursor: auto;
+}
+
+.post-count {
+    color: rgb(148, 155, 160);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.page-btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #595f63;
+}
+
+.btn-grid {
+    margin-right: 15px;
+}
+
+.btn-grid:last-child {
+    margin-right: 0;
+}
+
+.change-page:hover {
+    color: rgb(4, 5, 5);
+    font-weight: 500;
+}
 
 /* Footer CSS ===============================================================================================================================================================*/
 footer {
