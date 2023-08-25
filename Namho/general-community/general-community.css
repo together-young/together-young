@@ -809,6 +809,27 @@ header {
     margin: 16px 0;
 }
 
+.to-post-write {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    background-color: #2A7DE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 0;
+    margin: 16px 0;
+}
+
 .contents-container {
     flex: 0 0 75%;
     max-width: 75%;
