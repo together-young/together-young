@@ -43,11 +43,9 @@ $(function () {
 
   // 서브 헤더 박스 밖으로 마우스가 벗어날 시 호버링 제거
   $("header").mouseleave(function () {
-    if ($(".first-menu").css("display") === "flex") {
-      $(".first-menu").css("display", "none");
-    }
     if ($(".second-menu").css("display") === "flex") {
       $(".second-menu").css("display", "none");
+      $(".first-menu").css("display", "flex");
     }
   });
 });

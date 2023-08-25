@@ -13,45 +13,9 @@
 23.08.24
 헤더 우측 상단 아바타 구조 수정, 팝업창에 트랜지션 추가
 <html, css 수정됨>
-	- html
-		123행 버튼 내부 교체
-		  	<div class="header-avatar">
-                                            <div class="no-avatar">
-                                                <svg data-v-bd9f2bcc="" data-v-16c10fa5="" width="16" height="16"
-                                                    viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
-                                                    style="fill: rgb(207, 212, 215);">
-                                                    <circle data-v-bd9f2bcc="" cx="8" cy="4.5" r="2.5"></circle>
-                                                    <path data-v-bd9f2bcc=""
-                                                        d="M4.11325 10.0801C4.97961 8.78058 6.43814 8 8 8C9.56186 8 11.0204 8.78058 11.8868 10.0801L12.0826 10.3739C13.1159 11.9239 12.0048 14 10.142 14H5.85801C3.99518 14 2.88408 11.9239 3.91739 10.3739L4.11325 10.0801Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-	- css
-		450행의 .header-avatar 부터 .header-icon:hover .header-user-info-popover-wrap 까지 쭉 새로 교체
-.header-avatar {
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-    position: relative;
-    border-radius: 100%;
-    overflow: hidden;
-}
 
-.header-user-info-popover-wrap {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(1010px, 46px, 0px);
-    width: 196px;
-    padding-top: 10px;
-    z-index: 10;
-    transition: opacity .15s, visibility .15s;
-}
-
-.header-icon:hover .header-user-info-popover-wrap {
-    visibility: visible;
-    opacity: 1;
-}
+23.08.25
+프로젝트 진행사항 변경에 따른 헤더 대폭 교체
+<html, css, js 수정됨>
+- html과 css는 헤더부분만 수정되었으니 전부 교체해주세요. 기능적인면도 추가되고 제거된 부분이 있기 때문에 기존 헤더를 수정하셨더라도 다시 붙여넣어 주세요.
+- js도 전반적으로 수정되었으니 확인하시고 교체해주세요.
