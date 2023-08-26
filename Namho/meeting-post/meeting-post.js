@@ -11,9 +11,8 @@ $(function () {
     }
   });
 
-  let liked = false;
-
   // 좋아요 버튼 누를시 작동 코드
+  let liked = false;
   $("#post-like").on("click", function () {
     if (!liked) {
       $("#post-like-svg").css("fill", "rgb(233, 37, 37)");
@@ -23,6 +22,92 @@ $(function () {
       $("#post-like-svg").css("fill", "rgb(148, 155, 160)");
       $("#post-like-count").css("color", "rgb(148, 155, 160)");
       liked = false;
+    }
+  });
+
+  // 북마크
+  let marked = false;
+  $("#post-bookmark").on("click", function () {
+    if (!marked) {
+      $("#post-bookmark-svg").css("fill", "rgb(0, 160, 0)");
+      $("#post-bookmark-count").css("color", "rgb(0, 160, 0)");
+      marked = true;
+    } else {
+      $("#post-bookmark-svg").css("fill", "rgb(148, 155, 160)");
+      $("#post-bookmark-count").css("color", "rgb(148, 155, 160)");
+      marked = false;
+    }
+  });
+
+  // 게시글의 높이에 따라 팝업창 위치 조정
+  const postHeight = $(".post-content").height();
+  $(".participants-view-wrap").css({
+    transform: `translate3d(260px, ${175 + postHeight + 54}px, 0px)`,
+  });
+  $(".map-wrap").css({
+    transform: `translate3d(220px, ${180 + postHeight + 16}px, 0px)`,
+  });
+  $(".date-wrap").css({
+    transform: `translate3d(760px, ${180 + postHeight + 16}px, 0px)`,
+  });
+
+  // 맵 팝업
+  let isMapOn = false;
+
+  $("#map").on("click", function () {
+    if (!isMapOn) {
+      $(".map-wrap").css({
+        visibility: "visible",
+        opacity: "1",
+      });
+      isMapOn = true;
+    } else {
+      $(".map-wrap").css({
+        visibility: "hidden",
+        opacity: "0",
+      });
+      isMapOn = false;
+    }
+  });
+
+  let isDateOn = false;
+
+  $("#date").on("click", function () {
+    if (!isDateOn) {
+      $(".date-wrap").css({
+        visibility: "visible",
+        opacity: "1",
+      });
+      isDateOn = true;
+    } else {
+      $(".date-wrap").css({
+        visibility: "hidden",
+        opacity: "0",
+      });
+      isDateOn = false;
+    }
+  });
+
+  // 모임 인원 팝업
+  let participant = false;
+
+  $("#post-participant").on("click", function () {
+    if (!participant) {
+      $("#post-participant-svg").css("fill", "#2A7DE1");
+      $("#post-participant-count").css("color", "#2A7DE1");
+      $(".participants-view-wrap").css({
+        visibility: "visible",
+        opacity: "1",
+      });
+      participant = true;
+    } else {
+      $("#post-participant-svg").css("fill", "rgb(148, 155, 160)");
+      $("#post-participant-count").css("color", "rgb(148, 155, 160)");
+      $(".participants-view-wrap").css({
+        visibility: "hidden",
+        opacity: "0",
+      });
+      participant = false;
     }
   });
 
@@ -56,9 +141,7 @@ $(function () {
     button.prop("disabled", !isEnabled);
   }
 
-  // 댓글 추가 시 댓글 수 +1 추가 되도록 후일에 구현하여야 함 혹은 댓글 작성시 페이지 새로고침 필요 //
-
-  // 댓글 수정 버튼을 누를시 textarea로 화면 전환 및 댓글 내용이 수정창으로 복사(서버 접속 최소화를 위함)
+  // 댓글 수정 버튼 누를시 textarea로 전환
   $(".reply-edit-btn").on("click", function () {
     let replyContainer = $(this).closest(".reply-article");
     let replyView = replyContainer.find(".reply-view");

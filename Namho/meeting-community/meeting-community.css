@@ -721,6 +721,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 114px;
+    z-index: 7;
 }
 
 .inside-container {
@@ -732,6 +733,16 @@ header {
     width: 100%;
 }
 
+.no-avatar {
+    background: #f3f4f5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .sidebar-container {
     display: flex;
     padding: 0 12px;
@@ -739,11 +750,19 @@ header {
     flex: 0 0 25%;
 }
 
-.login-container {
+.sidebar-fixed {
+    display: flex;
+    flex-direction: column;
     position: fixed;
+    align-items: center;
+    width: 253px;
+}
+
+.login-container {
     border: 1px solid #eaecee;
     border-radius: 10px;
     padding: 5px 5px;
+    width: 100%;
 }
 
 .login-user-container {
@@ -797,18 +816,105 @@ header {
     line-height: 20px;
     min-width: 49px;
     padding: 0 12px;
-    background-color: #2A7DE1;
+    background-color: #d4e5f9;
+    color: #2a7de1;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    border: 0;
+    margin: 16px 0 8px 0;
+}
+
+.to-post-write {
+    width: 241px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    background-color: #2A7DE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
     color: #fff;
     border: 0;
     margin: 16px 0;
 }
 
+.region-select-container {
+    background: #fff;
+    border: 3px solid #eaecee;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 0;
+    width: 100%;
+    max-height: 312px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.capital-region-container,
+.major-cities-container,
+.regions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.region-select-row {
+    display: flex;
+    margin: 4px 0;
+}
+
+.region-select-column {
+    width: 50%;
+    color: #202325;
+    letter-spacing: .02em;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.region-row-devider {
+    border: 0;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #eaecee;
+    height: 0;
+    width: 90%;
+    margin: 6px 0;
+    padding: 0;
+}
+
+.region-search-btn {
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0;
+    background-color: #2A7DE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    border: 0;
+    bottom: 0;
+    position: relative;
+    margin-top: 5px;
+}
+
+/* 포스트 게시 */
 .contents-container {
     flex: 0 0 75%;
     max-width: 75%;
@@ -817,124 +923,6 @@ header {
     flex-direction: column;
 }
 
-.youth-info-header-container {
-    margin-bottom: 20px;
-    border: 1px solid #eaecee;
-    border-radius: 10px;
-    padding: 20px;
-    display: block;
-    position: relative;
-    background-color: rgb(247, 248, 248);
-}
-
-.contents-menu-container {
-    margin-bottom: 20px;
-    border: 1px solid #eaecee;
-    border-radius: 10px;
-    padding: 20px;
-    display: block;
-    position: relative;
-    background-color: rgb(247, 248, 248);
-}
-
-.contents-menu-title {
-    color: rgb(4, 5, 5);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.contents-menu-card-con {
-    margin-bottom: 12px;
-    width: 100%;
-    display: flex;
-}
-
-.contents-menu-card {
-    position: relative;
-    max-width: 50%;
-    flex: 0 0 50%;
-    padding: 0 12px;
-}
-
-.card-inside-container {
-    background-color: #fff;
-    box-shadow: 3px 7px 7px 3px rgba(0, 0, 0, .06);
-    border-radius: 10px;
-    height: 279px;
-    padding: 36px 28px;
-    transition: .2s;
-    cursor: pointer;
-    position: relative;
-}
-
-.card-title {
-    color: rgb(4, 5, 5);
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 31px;
-}
-
-.card-content {
-    color: rgb(148, 155, 160);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-top: 8px;
-}
-
-.card-img-container {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    background: white;
-    right: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hover-green:hover {
-    background-color: #25C481;
-    transform: translateY(-10px);
-}
-
-#hover-blue:hover {
-    background-color: #2A7DE1;
-    transform: translateY(-10px);
-}
-
-#hover-green.active {
-    background-color: #25C481;
-    transform: translateY(-10px);
-}
-
-#hover-blue.active {
-    background-color: #2A7DE1;
-    transform: translateY(-10px);
-}
-
-.card-inside-container:hover .card-title {
-    color: #fff;
-}
-
-.card-inside-container.active .card-title {
-    color: #fff;
-}
-
-.card-inside-container:hover .card-content {
-    color: hsla(0, 0%, 100%, .7);
-}
-
-.card-inside-container.active .card-content {
-    color: hsla(0, 0%, 100%, .7);
-}
-
-/* 포스트 게시 */
 .community-post-container {
     border: 1px solid #eaecee;
     border-radius: 10px;
@@ -1069,6 +1057,7 @@ footer {
     bottom: 0;
     width: 100%;
     position: relative;
+    z-index: 3;
 }
 
 .footer-font {
