@@ -739,11 +739,19 @@ header {
     flex: 0 0 25%;
 }
 
-.login-container {
+.sidebar-fixed {
+    display: flex;
+    flex-direction: column;
     position: fixed;
+    align-items: center;
+    width: 253px;
+}
+
+.login-container {
     border: 1px solid #eaecee;
     border-radius: 10px;
     padding: 5px 5px;
+    width: 100%;
 }
 
 .login-user-container {
@@ -797,17 +805,111 @@ header {
     line-height: 20px;
     min-width: 49px;
     padding: 0 12px;
-    background-color: #2A7DE1;
+    background-color: #d4e5f9;
+    color: #2a7de1;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    border: 0;
+    margin: 16px 0 8px 0;
+}
+
+.to-post-write {
+    width: 241px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    background-color: #2A7DE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
     color: #fff;
     border: 0;
     margin: 16px 0;
 }
+
+.popular-posts-container-title {
+    color: rgb(4, 5, 5);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.popular-posts-container {
+    border: 3px solid #eaecee;
+    border-radius: 10px;
+    padding: 5px 0 5px 5px;
+    margin: 0;
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.popular-post {
+    width: 100%;
+    cursor: pointer;
+}
+
+.popular-post:not(:last-child)::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    border-top: 1px solid #eaecee;
+    margin: 5px 0;
+}
+
+.popular-post-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.popular-post-date {
+    color: rgb(89, 95, 99);
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.popular-post-category {
+    color: rgb(89, 95, 99);
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-right: 15px;
+}
+
+.popular-post-title {
+    color: rgb(4, 5, 5);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+/* 포스트 */
 
 .contents-container {
     flex: 0 0 75%;
@@ -817,7 +919,6 @@ header {
     flex-direction: column;
 }
 
-/* 포스트 */
 .community-post-container {
     border: 1px solid #eaecee;
     border-radius: 10px;
