@@ -326,6 +326,11 @@ header {
     margin-left: 24px;
 }
 
+.header-nav-menu .to-first {
+    color: #2A7DE1;
+    font-weight: 600;
+}
+
 .header-nav-continer-right {
     display: flex;
     align-items: center;
@@ -624,7 +629,7 @@ header {
 }
 
 .first-menu {
-    display: none;
+    display: flex;
 }
 
 .second-menu {
