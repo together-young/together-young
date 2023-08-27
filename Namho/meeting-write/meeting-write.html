@@ -8,7 +8,7 @@
     <link data-n-head="ssr" rel="preload" as="style"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="meeting-write.css">
     <style>
         @import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css);
         @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
@@ -242,9 +242,201 @@
                 </div>
             </div>
         </header>
+
         <div class="main-container">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="grid">
+                <div class="write-form-wrap">
+                    <div class="write-form-container">
+                        <h2 class="write-form-title">
+                            모임 게시글 작성
+                            <p class="write-form-subtitle"><strong>모임 게시글</strong>을 작성해서 <strong>다양한 사람</strong>들과 모임을
+                                <strong>함께</strong> 즐기세요
+                            </p>
+                        </h2>
+                        <div>
+                            <div class="form-content-category-wrap">
+                                <div class="form-content-category-con" id="category">
+                                    <div>
+                                        <input type="text" placeholder="카테고리" readonly="readonly" class="category-input"
+                                            id="categoryInput" value="">
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg data-v-bd9f2bcc="" data-v-69d2418d="" width="10" height="5"
+                                            viewBox="0 0 10 5" fill="#595F63" xmlns="http://www.w3.org/2000/svg"
+                                            class="category-icon" id="categoryIcon" data-v-04ae911b=""
+                                            style="fill: rgb(118, 125, 130);">
+                                            <path data-v-bd9f2bcc=""
+                                                d="M5.35356 4.64645C5.1583 4.84171 4.84171 4.84171 4.64645 4.64645L0.853554 0.853553C0.538572 0.538571 0.761655 1.46033e-07 1.20711 1.84975e-07L8.79289 -1.05529e-07C9.23835 -6.65858e-08 9.46143 0.538571 9.14645 0.853553L5.35356 4.64645Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="form-content-category-con" id="region">
+                                    <div>
+                                        <input type="text" placeholder="지역" readonly="readonly" class="category-input"
+                                            id="regionInput" value="">
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg data-v-bd9f2bcc="" data-v-69d2418d="" width="10" height="5"
+                                            viewBox="0 0 10 5" fill="#595F63" xmlns="http://www.w3.org/2000/svg"
+                                            class="category-icon" id="regionIcon" data-v-04ae911b=""
+                                            style="fill: rgb(118, 125, 130);">
+                                            <path data-v-bd9f2bcc=""
+                                                d="M5.35356 4.64645C5.1583 4.84171 4.84171 4.84171 4.64645 4.64645L0.853554 0.853553C0.538572 0.538571 0.761655 1.46033e-07 1.20711 1.84975e-07L8.79289 -1.05529e-07C9.23835 -6.65858e-08 9.46143 0.538571 9.14645 0.853553L5.35356 4.64645Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="category-dropdown-container" id="categoryDropdown">
+                                    <div class="category">
+                                        <div>스포츠</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="category">
+                                        <div>악기</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="category">
+                                        <div>요리</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="category">
+                                        <div>기타</div>
+                                    </div>
+                                </div>
+                                <div class="category-dropdown-container" id="regionDropdown">
+                                    <div class="region">
+                                        <div>서울특별시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>인천광역시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>경기도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>강원도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>충청북도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>대전광역시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>세종특별자치시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>충청남도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>대구</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>경상북도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>울산광역시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>부산광역시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>경상남도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>전라북도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>광주광역시</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>전라남도</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="region">
+                                        <div>제주특별자치도</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="write-form-title-con">
+                            <input placeholder="제목을 입력하세요" name="question" label="" autocomplete="off" type="text"
+                                class="form-title" style="text-align: left;">
+                        </div>
+                        <div class="write-form-content-container">
+                            <textarea cols="30" rows="10" placeholder="모임 내용을 적어주세요" maxlength="1000"
+                                class="form-content"></textarea>
+                        </div>
+                        <div class="form-type-count">
+                            글자수:&nbsp;
+                            <span> 0 </span>
+                            &nbsp;/ 1000
+                        </div>
+                        <div class="line-container">
+                            <div class="line-title">모임 날짜</div>
+                            <div class="line-subtitle">모임 날짜와 모임시간을 설정하세요</div>
+                        </div>
+                        <div class="select-container">
+                            <div class="flex-col">
+                                <div class="date-select-label">모임 날짜</div>
+                                <div class="select-each-con">
+                                    <input class="inputs" type="date" id="datePicker">
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="date-select-label">시작 시간</div>
+                                <div class="select-each-con">
+                                    <input class="inputs" type="time" placeholder="시작시간" id="timePicker1">
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="date-select-label">종료 시간</div>
+                                <div class="select-each-con">
+                                    <input class="inputs" type="time" id="timePicker2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="line-title">모임 인원</div>
+                            <div class="line-subtitle">모임에 참여가능한 인원을 설정하세요</div>
+                        </div>
+                        <div class="select-container">
+                            <div class="select-each-con" style="margin-right: 8px;">
+                                <input class="inputs" type="number" id="minPeople" min="0" placeholder="모임 최소 인원">
+                            </div>
+                            <div class="select-each-con">
+                                <input class="inputs" type="number" id="maxPeople" min="0" placeholder="모임 최대 인원">
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="line-title">모임 장소</div>
+                            <div class="line-subtitle">모임 장소를 설정하세요</div>
+                        </div>
+                        <div class="map-container"></div>
+                        <div class="summit-container">
+                            <button class="summit-btn">작성하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <footer>
             <div class="grid">
                 <div class="footer-container">
@@ -398,5 +590,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="header.js"></script>
+<script src="form.js"></script>
 
 </html>

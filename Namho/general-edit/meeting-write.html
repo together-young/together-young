@@ -8,7 +8,7 @@
     <link data-n-head="ssr" rel="preload" as="style"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="meeting-write.css">
     <style>
         @import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css);
         @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
@@ -242,9 +242,72 @@
                 </div>
             </div>
         </header>
+
         <div class="main-container">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="grid">
+                <div class="write-form-wrap">
+                    <div class="write-form-container">
+                        <h2 class="write-form-title">
+                            일반 게시글 작성
+                        </h2>
+                        <div>
+                            <div class="form-content-category-wrap">
+                                <div class="form-content-category-con" id="category">
+                                    <div>
+                                        <input type="text" placeholder="카테고리" readonly="readonly" class="category-input"
+                                            id="categoryInput" value="">
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg data-v-bd9f2bcc="" data-v-69d2418d="" width="10" height="5"
+                                            viewBox="0 0 10 5" fill="#595F63" xmlns="http://www.w3.org/2000/svg"
+                                            class="category-icon" id="categoryIcon" data-v-04ae911b=""
+                                            style="fill: rgb(118, 125, 130);">
+                                            <path data-v-bd9f2bcc=""
+                                                d="M5.35356 4.64645C5.1583 4.84171 4.84171 4.84171 4.64645 4.64645L0.853554 0.853553C0.538572 0.538571 0.761655 1.46033e-07 1.20711 1.84975e-07L8.79289 -1.05529e-07C9.23835 -6.65858e-08 9.46143 0.538571 9.14645 0.853553L5.35356 4.64645Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="category-dropdown-container" id="categoryDropdown">
+                                    <div class="category">
+                                        <div>스포츠</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="category">
+                                        <div>악기</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="category">
+                                        <div>요리</div>
+                                    </div>
+                                    <hr class="category-devider">
+                                    <div class="category">
+                                        <div>기타</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="write-form-title-con">
+                            <input placeholder="제목을 입력하세요" name="question" label="" autocomplete="off" type="text"
+                                class="form-title" style="text-align: left;">
+                        </div>
+                        <div class="write-form-content-container">
+                            <textarea cols="30" rows="10" placeholder="모임 내용을 적어주세요" maxlength="1000"
+                                class="form-content"></textarea>
+                        </div>
+                        <div class="form-type-count">
+                            글자수:&nbsp;
+                            <span> 0 </span>
+                            &nbsp;/ 1000
+                        </div>
+                        <div class="summit-container">
+                            <button class="summit-btn">수정하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <footer>
             <div class="grid">
                 <div class="footer-container">
@@ -398,5 +461,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="header.js"></script>
+<script src="form.js"></script>
 
 </html>

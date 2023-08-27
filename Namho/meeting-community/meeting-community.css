@@ -6,6 +6,14 @@
     outline: none;
 }
 
+.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .h1,
 .h2,
 .h3,
@@ -930,6 +938,32 @@ header {
     cursor: pointer;
     position: relative;
     background: #fff;
+    overflow: hidden;
+}
+
+.indicator-container {
+    display: flex;
+    position: absolute;
+    border-radius: 0 0 0 10px;
+    top: 0;
+    right: 0;
+    padding: 5px 12px;
+    overflow: hidden;
+    background: hsla(0, 100%, 62%, 0.678);
+}
+
+.indicator {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.indicator.active {
+    display: flex;
 }
 
 .community-post-inside-con {
@@ -984,6 +1018,7 @@ header {
 .timeline-bottom-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin-top: 8px;
 }
@@ -1033,6 +1068,27 @@ header {
 
 .btn-grid:last-child {
     margin-right: 0;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.categories-devider {
+    border: 0;
+    border-left: 1px solid #eaecee;
+    width: 0;
+    height: 14px;
+    margin: 0 14px;
+}
+
+.category {
+    color: rgb(4, 5, 5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 .change-page:hover {

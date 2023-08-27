@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="meeting-post.css">
     <style>
         @import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css);
+        @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
     </style>
 </head>
 
@@ -22,7 +23,12 @@
                     <div class="header-nav-container-left">
                         <div class="header-logo">
                             <a href="#">
-                                함께해<span style="letter-spacing: .01em;">YOUNG</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 101 16"
+                                    style="display: flex; align-items: center">
+                                    <text id="함께해YO" class="cls-1" transform="translate(50.553 13.035) scale(0.325)">
+                                        <tspan x="0">함께해YOUNG</tspan>
+                                    </text>
+                                </svg>
                             </a>
                         </div>
                         <ul class="header-nav">
@@ -271,27 +277,63 @@
                                 </button>
                             </div>
                             <div class="post-action-list-container">
-                                <div class="post-action-list">
-                                    <div class="post-action-selection">
-                                        <svg data-v-bd9f2bcc="" data-v-1fc573bf="" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
-                                            class="action-icon" data-v-45a3e27e="" style="fill: rgb(89, 95, 99);">
-                                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12 6.5V11H4V6.5C4 4.29086 5.79086 2.5 8 2.5C10.2091 2.5 12 4.29086 12 6.5ZM3 11.2676V6.5C3 3.73858 5.23858 1.5 8 1.5C10.7614 1.5 13 3.73858 13 6.5V11.2676C13.5978 11.6134 14 12.2597 14 13V14C14 14.5523 13.5523 15 13 15H3C2.44772 15 2 14.5523 2 14V13C2 12.2597 2.4022 11.6134 3 11.2676ZM4 12C3.44772 12 3 12.4477 3 13L3 14H13V13C13 12.4477 12.5523 12 12 12H4Z">
-                                            </path>
-                                        </svg>
-                                        신고하기
+                                <div id="viewersAction" style="display: none;">
+                                    <div class="post-action-list">
+                                        <div class="post-action-selection">
+                                            <svg data-v-bd9f2bcc="" data-v-1fc573bf="" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                class="action-icon" data-v-45a3e27e="" style="fill: rgb(89, 95, 99);">
+                                                <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M12 6.5V11H4V6.5C4 4.29086 5.79086 2.5 8 2.5C10.2091 2.5 12 4.29086 12 6.5ZM3 11.2676V6.5C3 3.73858 5.23858 1.5 8 1.5C10.7614 1.5 13 3.73858 13 6.5V11.2676C13.5978 11.6134 14 12.2597 14 13V14C14 14.5523 13.5523 15 13 15H3C2.44772 15 2 14.5523 2 14V13C2 12.2597 2.4022 11.6134 3 11.2676ZM4 12C3.44772 12 3 12.4477 3 13L3 14H13V13C13 12.4477 12.5523 12 12 12H4Z">
+                                                </path>
+                                            </svg>
+                                            신고하기
+                                        </div>
+                                        <hr class="post-action-devider">
+                                        <div class="post-action-selection">
+                                            <svg data-v-bd9f2bcc="" data-v-1fc573bf="" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                class="action-icon" data-v-45a3e27e="" style="fill: rgb(89, 95, 99);">
+                                                <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14 8C14 11.3137 11.3137 14 8 14C6.52314 14 5.17091 13.4664 4.12557 12.5815L12.5815 4.12557C13.4664 5.17091 14 6.52314 14 8ZM3.41847 11.8744L11.8744 3.41847C10.8291 2.53358 9.47685 2 8 2C4.68629 2 2 4.68629 2 8C2 9.47685 2.53358 10.8291 3.41847 11.8744ZM15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z">
+                                                </path>
+                                            </svg>
+                                            차단하기
+                                        </div>
                                     </div>
-                                    <hr class="post-action-devider">
-                                    <div class="post-action-selection">
-                                        <svg data-v-bd9f2bcc="" data-v-1fc573bf="" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
-                                            class="action-icon" data-v-45a3e27e="" style="fill: rgb(89, 95, 99);">
-                                            <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M14 8C14 11.3137 11.3137 14 8 14C6.52314 14 5.17091 13.4664 4.12557 12.5815L12.5815 4.12557C13.4664 5.17091 14 6.52314 14 8ZM3.41847 11.8744L11.8744 3.41847C10.8291 2.53358 9.47685 2 8 2C4.68629 2 2 4.68629 2 8C2 9.47685 2.53358 10.8291 3.41847 11.8744ZM15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z">
-                                            </path>
-                                        </svg>
-                                        차단하기
+                                </div>
+                                <div id="writersAction">
+                                    <div class="post-action-list">
+                                        <div class="post-action-selection">
+                                            <svg id="Layer_1"
+                                                style="enable-background:new 0 0 24 24; fill: rgb(89, 95, 99);"
+                                                version="1.1" width="16" height="16" viewBox="0 0 24 24"
+                                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M19.607,18.746c0,0.881-0.716,1.624-1.597,1.624H5.231c-0.881,0-1.597-0.743-1.597-1.624V5.967  c0-0.881,0.716-1.571,1.597-1.571h7.454V3.332H5.231c-1.468,0-2.662,1.168-2.662,2.636v12.778c0,1.468,1.194,2.688,2.662,2.688  h12.778c1.468,0,2.662-1.221,2.662-2.688v-7.428h-1.065V18.746z">
+                                                </path>
+                                                <path
+                                                    d="M20.807,3.17c-0.804-0.805-2.207-0.805-3.012,0l-7.143,7.143c-0.068,0.068-0.117,0.154-0.14,0.247L9.76,13.571  c-0.045,0.181,0.008,0.373,0.14,0.506c0.101,0.101,0.237,0.156,0.376,0.156c0.043,0,0.086-0.005,0.129-0.016l3.012-0.753  c0.094-0.023,0.179-0.072,0.247-0.14l7.143-7.143c0.402-0.402,0.624-0.937,0.624-1.506S21.21,3.572,20.807,3.17z M13.016,12.467  l-2.008,0.502l0.502-2.008l5.909-5.909l1.506,1.506L13.016,12.467z M20.054,5.428l-0.376,0.376l-1.506-1.506l0.376-0.376  c0.402-0.402,1.104-0.402,1.506,0c0.201,0.201,0.312,0.468,0.312,0.753C20.366,4.96,20.255,5.227,20.054,5.428z">
+                                                </path>
+                                            </svg>
+                                            수정하기
+                                        </div>
+                                        <hr class="post-action-devider">
+                                        <div class="post-action-selection">
+                                            <svg data-name="Layer 1" id="Layer_1" width="16" height="16"
+                                                viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                                                style="fill: rgb(89, 95, 99);">
+                                                <title />
+                                                <path
+                                                    d="M42,3H28a2,2,0,0,0-2-2H22a2,2,0,0,0-2,2H6A2,2,0,0,0,6,7H42a2,2,0,0,0,0-4Z" />
+                                                <path
+                                                    d="M39,9a2,2,0,0,0-2,2V43H11V11a2,2,0,0,0-4,0V45a2,2,0,0,0,2,2H39a2,2,0,0,0,2-2V11A2,2,0,0,0,39,9Z" />
+                                                <path d="M21,37V19a2,2,0,0,0-4,0V37a2,2,0,0,0,4,0Z" />
+                                                <path d="M31,37V19a2,2,0,0,0-4,0V37a2,2,0,0,0,4,0Z" />
+                                            </svg>
+                                            삭제하기
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -366,14 +408,14 @@
                         <div class="date-wrap">
                             <div class="date-container">
                                 <div class="flex-row" style="margin-bottom: 6px;">
-                                    <div style="color: #949BA0;">시작일</div>
+                                    <div style="color: #949BA0;">모임 날짜</div>
                                     <hr class="date-devider">
-                                    <div class="start-datetime">2023.08.26 14:00</div>
+                                    <div class="start-datetime">2023.08.26</div>
                                 </div>
                                 <div class="flex-row">
-                                    <div style="color: #949BA0;">종료일</div>
+                                    <div style="color: #949BA0;">모임 시간</div>
                                     <hr class="date-devider">
-                                    <div class="end-datetime">2023.08.26 16:00</div>
+                                    <div class="end-datetime">14:00 ~ 16:00</div>
                                 </div>
                             </div>
                         </div>
