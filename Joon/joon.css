@@ -999,6 +999,11 @@ header {
     flex-direction: row;
 }
 
+.button-sub-header-menu:hover 
+{color:#797f83 !important}
+
+.c-new-col.no-gutters {width:360px;display:inline-block;}
+
 .c-icon-rating {
     -webkit-box-align: center;
     align-items: center;
