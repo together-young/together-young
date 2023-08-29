@@ -753,6 +753,7 @@ header {
     position: fixed;
     align-items: center;
     width: 253px;
+    z-index: 10;
 }
 
 .login-container {
@@ -854,6 +855,7 @@ header {
 
 .popular-posts-container {
     border: 3px solid #eaecee;
+    background-color: #fff;
     border-radius: 10px;
     padding: 5px 0 5px 5px;
     margin: 0;
@@ -1061,9 +1063,9 @@ footer {
 }
 
 .footer-container {
-    flex: 0 0 100%;
-    max-width: 1108px;
     display: flex;
+    position: relative;
+    max-width: 1108px;
 }
 
 .footer-container h2 {
