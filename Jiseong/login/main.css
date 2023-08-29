@@ -303,6 +303,14 @@ header {
     letter-spacing: .05em;
 }
 
+text.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .header-nav {
     display: flex;
     margin: 26px;
@@ -709,15 +717,145 @@ header {
 
 /* 메인 컨테이너 작성해주세요 */
 .main-container {
-    min-height: calc(100vh - 342px);
+    min-height: calc(100vh - 842px);
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 2px;
 }
 
+div.c-application-main-grip {
+    min-height: calc(100vh - 324px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+div.c-application-c-row {
+    margin-right: -24px;
+    margin-left: -24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.c-application-login {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 85px;
+}
+
+div.c-application-login-view {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 38.5px;
+    width: 343px;
+    margin: auto;
+    display: block;
+}
+
+div.c-application-headline {
+    color: rgb(32, 35, 37);
+    line-height: 140%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+div.login-btn-wrapper {
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    color: #495057;
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: #fff;
+}
+
+div.register-button-kakao {
+    background: #fee500;
+    color: #181600;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin: 0 0 12px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.register-button-icon {
+    margin-right: 2px;
+    width: 24px;
+    height: 48px;
+   
+}
+
+img {
+    display: flex;
+    width: 100%!important;
+    height: 100%;
+    border-style: none;
+    max-width: 100%;
+    
+}
+
+div.ml-67 {
+    margin-left: 6px !important;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+div.c-application-typing {
+    color: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+
+div.another-login-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    height: 48px;
+    padding-left: 16px;
+    background-color: #fcfcfc;
+}
+
+a.c-application-another-start {
+    color: rgb(173, 179, 184);
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .02em;
+    font-weight: 400;
+    margin-left: 8px;
+    
+}
+
+div.second-c-application {
+    min-height: calc(100vh - 324px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------ */
 div.login-mb-85 {
     position: relative;
     margin-left: auto;
@@ -740,7 +878,93 @@ div.c-headline3 {
     line-height: 140%;
     font-size: 24px;
     font-weight: 600;
-    
+}
+
+div.register-buttons {
+    width: 100%;
+    margin-bottom: 24px;
+    height: 114px;
+}
+
+div.button-email {
+    background: #EAECEE;
+    color: #949ba0;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin: 0 0 12px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.button-icon {
+    margin-right: 2px;
+    width: 24px;
+    height: 48px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    max-width: 100%;
+}
+
+div.ml-6 {
+    margin-left: 6px !important;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+a.button-massage {
+    color: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+
+div.button-kakao {
+    background: #fee500;
+    color: #181600;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin: 0 0 12px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+p {
+    color: rgb(173, 179, 184);
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+a.agree {
+    background-color: transparent;
+    color: #495057;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+u.d-block {
+    color: rgb(42, 125, 225);
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-left: 80px;
 }
 
 div.email-small {
@@ -868,31 +1092,3 @@ div.semi-bold {
     letter-spacing: .02em;
 
 }
-
-a.agree {
-    background-color: transparent;
-    color: #495057;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-u.d-block {
-    color: rgb(42, 125, 225);
-    text-align: center;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 400;
-    margin-left: 80px;
-}
-
-p {
-    color: rgb(173, 179, 184);
-    text-align: center;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 400;
-}
-
-
-
-
