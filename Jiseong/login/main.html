@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
-    <link rel="shortcut icon" href="https://cdn.comento.kr/favicon/favicon-32x32.png" type="image/x-icon">
+    <link data-n-head="ssr" rel="preload" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <style>
         @import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css);
+        @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
     </style>
 </head>
 
@@ -20,7 +23,12 @@
                     <div class="header-nav-container-left">
                         <div class="header-logo">
                             <a href="#">
-                                함께해<span style="letter-spacing: .01em;">YOUNG</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 101 16"
+                                    style="display: flex; align-items: center">
+                                    <text id="함께해YO" class="cls-1" transform="translate(50.553 13.035) scale(0.325)">
+                                        <tspan x="0">함께해YOUNG</tspan>
+                                    </text>
+                                </svg>
                             </a>
                         </div>
                         <ul class="header-nav">
@@ -254,18 +262,18 @@
                                 <div class="register-button-icon">
                                     <img data-v-f9bf5e74="" src="https://cdn.comento.kr/icon/icon-kakao-medium.svg" alt="">
                                 </div>
-                                <div class="ml-6">
+                                <div class="ml-67">
                                     <div class="c-application-typing" style="color: inherit;">카카오로 1초만에 시작하기</div>
                                 </div>
                             </div>
-                            <div class="another-login-button">
+                            <div class="another-login-button" id="demo" >
                                 <svg data-v-bd9f2bcc="" data-v-c221cda7="" width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg" class="c-application c-icon" style="fill: rgb(207, 212, 215); transform: rotate(180deg);">
                                     <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd" d="M4.21913 11.3753C3.92696 11.7405 3.92696 12.2595 4.21913 12.6247L8.21913 17.6247C8.56414 18.056 9.19343 18.1259 9.62469 17.7809C10.056 17.4359 10.1259 16.8066 9.78087 16.3753L6.28062 12L9.78087 7.6247C10.1259 7.19344 10.056 6.56415 9.62469 6.21914C9.19343 5.87413 8.56414 5.94405 8.21913 6.37531L4.21913 11.3753Z">
                                     </path>
                                     <path data-v-bd9f2bcc="" fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 11.4477 19.5523 11 19 11H6C5.44771 11 5 11.4477 5 12C5 12.5523 5.44771 13 6 13H19C19.5523 13 20 12.5523 20 12Z">
                                     </path>
                                 </svg>
-                                <div class="c-application-another-start" style="color: rgb(173, 179, 184);">다른 방법으로 시작하기</div>
+                                <a href="javascript:createDIV()" class="c-application-another-start" id="demo" onclick="location.href='main copy.html'" style="color: rgb(173, 179, 184);">다른 방법으로 시작하기</a>
                             </div>
                         </div>
                     </div>
