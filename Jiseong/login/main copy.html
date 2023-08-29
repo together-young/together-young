@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
-    <link rel="shortcut icon" href="https://cdn.comento.kr/favicon/favicon-32x32.png" type="image/x-icon">
+    <link data-n-head="ssr" rel="preload" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <style>
         @import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css);
+        @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
     </style>
 </head>
 
@@ -20,7 +23,12 @@
                     <div class="header-nav-container-left">
                         <div class="header-logo">
                             <a href="#">
-                                함께해<span class="young-to" style="letter-spacing: .01em;">YOUNG</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 101 16"
+                                    style="display: flex; align-items: center">
+                                    <text id="함께해YO" class="cls-1" transform="translate(50.553 13.035) scale(0.325)">
+                                        <tspan x="0">함께해YOUNG</tspan>
+                                    </text>
+                                </svg>
                             </a>
                         </div>
                         <ul class="header-nav">
@@ -238,37 +246,29 @@
             <div class="login-mb-85">
                 <div class="login-view-wrapper" style="background-color: rgb(255, 255, 255); padding: 60px 38.5px;">
                     <div>
-                        <div class="c-headline3" style="color: rgb(32, 35, 37); line-height: 140%; font-size: 24px;">
+                        <div class="c-headline3" style="color: rgb(32, 35, 37); line-height: 130%; font-size: 24px;">
                             로그인
+                            <br><br>
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <div class="email-small" style="color: rgb(60, 65, 68);">
-                                <br>이메일<br>
-                            </div>
-                            <span>
-                                <div class="id-field">
-                                    <div class="id-input">
-                                        <input data-v-83b65348="" id="email" placeholder="your@email.com" name="email" label alight="left" autocomplete="off" type="email" color="primary" class="input-field" style="text-align: left;">
-                                    </div>
+                        <div class="register-buttons">
+                            <div class="button-email">
+                                <div class="button-icon">
+                                    <img data-v-f9bf5e74="" src="https://cdn.comento.kr/icon/icon-email-medium.svg" alt="">
                                 </div>
-                            </span>
-                            <div class="pw-small" style="color: rgb(60, 65, 68);">
-                                <br>비밀번호
-                            </div>
-                            <span>
-                                <div class="pw-field">
-                                    <div class="pw-input">
-                                        <input data-v-83b65348="" id="password" placeholder="비밀번호" name="password" label alight="left" autocomplete="off" type="password" color="primary" class="input-field2" style="text-align: left;">
-                                    </div>
+                                <div class="ml-6">
+                                    <a href="javascript:createDIV()" class="button-massage" id="fly" onclick="location.href='main copy 2.html'" style="color: inherit;">이메일로 로그인하기</a>
                                 </div>
-                            </span>
-                            <button class="login-button">
-                                <div class="c-button-icon"></div>
-                                <div class="semi-bold" style="color: inherit;">로그인</div>
-                                <div></div>
-                            </button>
+                            </div>
+                            <div class="button-kakao">
+                                <div class="button-icon">
+                                    <img data-v-f9bf5e74="" src="https://cdn.comento.kr/icon/icon-kakao-medium.svg" alt="">
+                                </div>
+                                <div class="ml-6">
+                                    <div class="button-massage" style="color: inherit;">카카오로 1초만에 시작하기</div>
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <p data-v-45a3e27e="" class="c-application c-typography agreement-wrapper mb-8 c-caption1" style="color: rgb(173, 179, 184); text-align: center;">
