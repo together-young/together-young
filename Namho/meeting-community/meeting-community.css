@@ -284,6 +284,11 @@ hr {
     margin-bottom: 24px;
 }
 
+.wrap {
+    position: relative;
+    z-index: 50;
+}
+
 /* Header CSS ===============================================================================================================================================================*/
 header {
     background-color: #fff;
@@ -764,6 +769,7 @@ header {
     position: fixed;
     align-items: center;
     width: 253px;
+    z-index: 10;
 }
 
 .login-container {
@@ -866,7 +872,6 @@ header {
     max-height: 312px;
     display: flex;
     flex-direction: column;
-    z-index: 5;
 }
 
 .capital-region-container,
@@ -1124,9 +1129,9 @@ footer {
 }
 
 .footer-container {
-    flex: 0 0 100%;
-    max-width: 1108px;
     display: flex;
+    position: relative;
+    max-width: 1108px;
 }
 
 .footer-container h2 {
