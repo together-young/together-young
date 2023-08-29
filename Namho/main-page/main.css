@@ -6,6 +6,14 @@
     outline: none;
 }
 
+.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .h1,
 .h2,
 .h3,
@@ -863,53 +871,61 @@ header {
     perspective: 1000px;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 636px solid transparent;
-    border-bottom: 358px solid #E0703F;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-}
-
 .front-flip,
 .back-flip {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    background-color: #2A7DE1;
     backface-visibility: hidden;
     border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.front-flip {
+    background-image: url("banner/front.jpg");
 }
 
 .back-flip {
     transform: rotateX(180deg);
-    background-color: #fff;
+    background-image: url("banner/back.jpg");
+}
+
+.back-flip::before {
+    content: "";
+    /* 의사 요소의 내용은 비워둡니다 */
+    position: absolute;
+    /* 절대 위치로 설정하여 요소 위에 위치 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 내부 요소의 너비와 높이를 100%로 설정하여 전체 영역을 채우도록 함 */
+    height: 100%;
+    background-image: url("banner/flipbanner.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    /* 블러 효과 적용 */
+    z-index: -1;
+    /* 배경 이미지 레이어를 요소 아래로 이동시켜 내용을 가리지 않도록 함 */
 }
 
 .logo-font {
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.5;
-    position: absolute;
+    color: #2A7DE1;
 }
 
-.logo-front-left,
-.logo-back-left {
-    top: 80px;
-    left: 40px;
-}
-
-.logo-front-right,
-.logo-back-right {
-    bottom: 80px;
-    right: 40px;
-    z-index: 10;
+.flips-type-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .logo-back-left {
@@ -936,8 +952,11 @@ header {
 .introduce-container {
     display: flex;
     position: relative;
+    flex-direction: row;
     width: 100%;
     margin-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-section-title {
@@ -945,6 +964,19 @@ header {
     font-weight: 600;
     line-height: 33px;
     font-size: 26px;
+}
+
+.link-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #fff;
+    background-color: #2A7DE1;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    text-align: center;
 }
 
 .cards-container {
@@ -957,7 +989,7 @@ header {
 }
 
 .card {
-    width: 259px;
+    width: 33.33%;
     height: 416px;
     margin-right: 24px;
     display: flex;
@@ -1070,6 +1102,32 @@ header {
     position: relative;
     border: 1px solid rgb(234, 236, 238);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.indicator-container {
+    display: flex;
+    position: absolute;
+    border-radius: 0 0 0 10px;
+    top: 0;
+    right: 0;
+    padding: 5px 12px;
+    overflow: hidden;
+    background: hsla(0, 100%, 62%, 0.678);
+}
+
+.indicator {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.indicator.active {
+    display: flex;
 }
 
 .community:last-child {

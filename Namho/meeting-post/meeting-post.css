@@ -6,6 +6,14 @@
     outline: none;
 }
 
+.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .h1,
 .h2,
 .h3,
@@ -707,7 +715,7 @@ header {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 114px;
 }
 
 .new-background-color {
@@ -841,6 +849,10 @@ header {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.post-action-selection svg {
+    margin-right: 4px;
 }
 
 .action-icon {
