@@ -61,4 +61,17 @@ $(function () {
     $(this).addClass("active");
     $("#general").removeClass("active");
   });
+
+  // 모바일 쿼리
+  $(".search-input-icon").click(function () {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+      $(".mobile-search-bar").css("display", "flex");
+      $(".backdrop").css("display", "flex");
+    }
+  });
+
+  $(".mobile-search-back-con").click(function () {
+    $(".mobile-search-bar").css("display", "none");
+    $(".backdrop").css("display", "none");
+  });
 });

@@ -266,22 +266,17 @@ hr {
     max-width: 1140px;
 }
 
-.text-decoration-underline {
-    text-decoration: underline !important;
-}
-
-.caption1 {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px
-}
-
 .mr4 {
     margin-right: 4px;
 }
 
 .mb24 {
     margin-bottom: 24px;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
 }
 
 /* Header CSS ===============================================================================================================================================================*/
@@ -343,13 +338,9 @@ header {
     margin-left: 24px;
 }
 
-.header-nav-menu .to-first {
-    color: #2A7DE1;
-    font-weight: 600;
-}
-
-.header-nav-continer-right {
+.header-nav-container-right {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: auto;
 }
@@ -358,8 +349,6 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    width: 300px;
-    height: 40px;
 }
 
 .search-input {
@@ -613,6 +602,44 @@ header {
     border-style: solid;
     border-color: #f3f4f5;
     opacity: 1;
+}
+
+.mobile-search-bar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 52px;
+    transition: 0.2;
+    transform: translateX(-16px);
+    background-color: #fff;
+    z-index: 10;
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.mobile-search-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.mobile-search-back-con {
+    margin-right: 16px;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
 }
 
 /* Sub-Header CSS ===============================================================================================================================================================*/
@@ -1063,9 +1090,9 @@ footer {
 }
 
 .footer-container {
-    display: flex;
-    position: relative;
+    flex: 0 0 100%;
     max-width: 1108px;
+    display: flex;
 }
 
 .footer-container h2 {
@@ -1167,4 +1194,141 @@ footer {
 
 .link-right li {
     margin-right: 8px;
+}
+
+.mobile-bottom-nav-con {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+    border: 0;
+    border-top: 1px solid #f3f4f5;
+    z-index: 7;
+}
+
+
+@media (max-width: 1000px) {
+    footer {
+        display: none;
+    }
+
+    .header-nav-container {
+        height: 52px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .header-login {
+        display: none;
+    }
+
+    .header-icon:nth-child(3) {
+        display: none;
+    }
+
+    .header-icon:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .search-input-icon {
+        position: relative;
+        top: 0;
+        transform: translateY(2%);
+    }
+
+    .mobile.search-input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-erase-btn {
+        display: none;
+    }
+
+    .mobile.input-erase-btn {
+        display: flex;
+    }
+
+    .header-icons-division ul {
+        margin-left: 8px;
+    }
+
+    .sub-header {
+        display: flex;
+        top: 52px;
+    }
+
+    .mobile.search-bar {
+        width: 100%;
+    }
+
+    .mobile.search-input {
+        display: flex;
+    }
+
+    .mobile-bottom-nav-con {
+        display: flex;
+    }
+
+    .mobile-bottom-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 87.75px;
+    }
+
+    .mobile-bottom-title {
+        color: #767D82;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .icons-btn:hover:not(.user-profile) {
+        background-color: transparent;
+    }
+
+    .main-container {
+        margin-top: 95px;
+        background-color: #f7f8f8;
+    }
+
+    .sidebar-container {
+        display: none;
+    }
+
+    .contents-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header-split-line {
+        display: none;
+    }
+
+    .inside-container {
+        margin-top: 20px;
+    }
+
+    .change-page:hover {
+        color: inherit;
+    }
+
+    .hover-font-weight-600:hover {
+        color: inherit;
+    }
 }

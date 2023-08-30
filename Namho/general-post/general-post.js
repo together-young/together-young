@@ -1,7 +1,22 @@
 $(function () {
   // 게시글 우측상단 액션버튼 작동 코드
   $(".post-action-btn").on("click", function () {
-    $(".post-action-list-container").toggle();
+    if (!window.matchMedia("(max-width: 1000px)").matches) {
+      $(".post-action-list-container").toggle();
+    } else {
+      $(".backdrop").css("display", "flex");
+      $(".post-action-modal").css("transform", "translateY(0)");
+    }
+  });
+
+  $(".backdrop").on("click", function () {
+    $(".backdrop").css("display", "none");
+    $(".post-action-modal").css("transform", "translateY(100%)");
+  });
+
+  $(".back").on("click", function () {
+    $(".backdrop").css("display", "none");
+    $(".post-action-modal").css("transform", "translateY(100%)");
   });
 
   $(document).on("click", function (event) {
