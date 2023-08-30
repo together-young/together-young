@@ -1210,6 +1210,22 @@ footer {
     z-index: 7;
 }
 
+.write-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    right: 20px;
+    bottom: 72px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .06);
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 100%;
+    background-color: #2A7DE1;
+    position: fixed;
+}
+
 
 @media (max-width: 1000px) {
     footer {
@@ -1267,6 +1283,10 @@ footer {
     .sub-header {
         display: flex;
         top: 52px;
+    }
+
+    .sub-header-menu {
+        margin: 0;
     }
 
     .mobile.search-bar {
@@ -1330,5 +1350,9 @@ footer {
 
     .hover-font-weight-600:hover {
         color: inherit;
+    }
+
+    .write-btn {
+        display: flex;
     }
 }
