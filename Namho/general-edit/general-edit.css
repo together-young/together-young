@@ -672,7 +672,7 @@ header {
 }
 
 .first-menu {
-    display: none;
+    display: flex;
 }
 
 .second-menu {
