@@ -6,6 +6,14 @@
     outline: none;
 }
 
+.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .h1,
 .h2,
 .h3,
@@ -266,6 +274,13 @@ hr {
     margin-bottom: 24px;
 }
 
+.wrap {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+}
+
+
 /* Header CSS ===============================================================================================================================================================*/
 header {
     background-color: #fff;
@@ -296,6 +311,13 @@ header {
     align-items: center;
 }
 
+.header-logo a {
+    font-size: 18px;
+    color: #2A7DE1;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
 .header-nav {
     display: flex;
     margin: 26px;
@@ -310,12 +332,17 @@ header {
     list-style: none;
 }
 
+.header-nav-menu:hover {
+    font-weight: 600;
+}
+
 .header-nav-menu:not(:first-child) {
     margin-left: 24px;
 }
 
-.header-nav-continer-right {
+.header-nav-container-right {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: auto;
 }
@@ -324,8 +351,6 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    width: 300px;
-    height: 40px;
 }
 
 .search-input {
@@ -581,6 +606,44 @@ header {
     opacity: 1;
 }
 
+.mobile-search-bar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 52px;
+    transition: 0.2;
+    transform: translateX(-16px);
+    background-color: #fff;
+    z-index: 10;
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.mobile-search-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.mobile-search-back-con {
+    margin-right: 16px;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
 /* Sub-Header CSS ===============================================================================================================================================================*/
 .sub-header {
     background-color: #fff;
@@ -616,6 +679,32 @@ header {
 
 .second-menu {
     display: none;
+}
+
+.sub-header-menu-title {
+    background: none;
+    color: #595f63;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    min-width: auto;
+    outline: 0;
+    padding: 4px;
+    width: fit-content;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sub-header-devider {
+    border: 0;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #595f63;
+    width: 0;
+    height: 14px;
+    margin: auto 16px;
 }
 
 .sub-header-menu-btn {
@@ -682,6 +771,7 @@ header {
     margin-top: 70px;
 }
 
+
 /* Second Header */
 .header-search {
     background-color: #f7f8f8;  
@@ -689,7 +779,7 @@ header {
     position: fixed;
     transition: top .1s linear, opacity .1s ease-in;
     width: 100vw;
-    z-index: 80;
+    z-index: 5;
 }
 
 .grid-container{
@@ -727,6 +817,7 @@ header {
     position: relative;
 }
 
+
 .button-sub-header-menu {
     color: #adb3b8 !important;
     font-size: 14px;
@@ -745,6 +836,7 @@ header {
 
 #main-grid {
     padding-top: 0!important;
+
 }
 
 .c-new-grid.fluid {
@@ -864,8 +956,10 @@ header {
 }
 
 
+
 .community-results-card:last-child {
     margin-bottom: 0;
+
 }
 
 .community-timeline-card {
@@ -959,6 +1053,11 @@ header {
     display: flex!important;
     flex-direction: row;
 }
+
+.button-sub-header-menu:hover 
+{color:#797f83 !important}
+
+.c-new-col.no-gutters {width:360px;display:inline-block;}
 
 .c-icon-rating {
     -webkit-box-align: center;
@@ -1275,8 +1374,6 @@ img {
 
 
 
-
-
 /* Footer CSS ===============================================================================================================================================================*/
 footer {
     padding: 48px 0 60px;
@@ -1398,4 +1495,125 @@ footer {
 
 .link-right li {
     margin-right: 8px;
+}
+
+.mobile-bottom-nav-con {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+    border: 0;
+    border-top: 1px solid #f3f4f5;
+    z-index: 7;
+}
+
+
+@media (max-width: 1000px) {
+
+    .header-search{
+    overflow: auto;
+    white-space: nowrap;
+    color: #112031;
+    }
+
+    .c-new-grid {
+        width: 100%;
+    }
+
+
+    footer {
+        display: none;
+    }
+
+    .header-nav-container {
+        height: 52px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .header-login {
+        display: none;
+    }
+
+    .header-icon:nth-child(3) {
+        display: none;
+    }
+
+    .header-icon:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .search-input-icon {
+        position: relative;
+        top: 0;
+        transform: translateY(2%);
+    }
+
+    .mobile.search-input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-erase-btn {
+        display: none;
+    }
+
+    .mobile.input-erase-btn {
+        display: flex;
+    }
+
+    .header-icons-division ul {
+        margin-left: 8px;
+    }
+
+    .sub-header {
+        display: none;
+    }
+
+    .mobile.search-bar {
+        width: 100%;
+    }
+
+    .mobile.search-input {
+        display: flex;
+    }
+
+    .mobile-bottom-nav-con {
+        display: flex;
+    }
+
+    .mobile-bottom-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 87.75px;
+    }
+
+    .mobile-bottom-title {
+        color: #767D82;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .icons-btn:hover:not(.user-profile) {
+        background-color: transparent;
+    }
+
+    .main-container {
+        margin-top: 53px;
+    }
 }
