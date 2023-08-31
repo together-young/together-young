@@ -672,7 +672,7 @@ header {
 }
 
 .first-menu {
-    display: none;
+    display: flex;
 }
 
 .second-menu {
@@ -757,17 +757,202 @@ header {
     position: relative;
 }
 
-/* 메인 컨테이너 작성해주세요 */
+/* Main CSS ========================================================================================================================================================== */
 .main-container {
     min-height: calc(100vh - 342px);
+    background-color: #f7f8f8;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 114px;
 }
 
+.write-form-wrap {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    position: relative;
+}
+
+.write-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 160px;
+    background: #fff;
+    padding: 18px 24px;
+}
+
+.write-form-title {
+    font-size: 26px;
+    line-height: 37px;
+    color: #282c30;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.write-form-subtitle {
+    color: #7e848a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-content-category-wrap {
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 10px;
+    column-gap: 12px;
+    max-width: 280px;
+}
+
+.form-content-category-con {
+    cursor: pointer;
+    padding: 6.5px 12px;
+    border-radius: 4px;
+    border: 1px solid #e1e4e6;
+    display: flex;
+    flex-direction: row;
+}
+
+.category-input {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #202325;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    transition: .3s;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.category-dropdown-container {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    max-height: 300px;
+    background: #fff;
+    box-shadow: 0 3px 7px #0000000f;
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 8;
+    padding: 8px 12px;
+}
+
+.category {
+    padding: 12px 4px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(60, 65, 68);
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #f3f4f5;
+}
+
+.category-devider {
+    border: 0;
+    border-top: 1px;
+    border-style: solid;
+    border-color: rgb(234, 236, 238);
+    margin: 6px 0;
+    width: inherit;
+    height: 0;
+}
+
+.form-content-category-con.active {
+    border: 1px solid #adb3b8;
+}
+
+.category-icon.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.category-dropdown-container.active {
+    display: block;
+}
+
+.write-form-title-con {
+    margin-bottom: 8px;
+}
+
+.form-title {
+    width: 100%;
+    height: 40px;
+    color: #3c4144;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .02em;
+
+    padding: 0 16px;
+    border: 1px solid #e1e4e6;
+    border-radius: 4px;
+    display: block;
+}
+
+.write-form-content-container {
+    border-radius: 3px;
+    border: 1px solid #e1e4e7;
+    padding: 16px 12px;
+    vertical-align: top;
+}
+
+.form-content {
+    width: 100%;
+    min-height: 280px;
+    word-wrap: break-word;
+    float: inherit;
+    border: none;
+    padding: 0;
+    resize: none;
+}
+
+.form-type-count {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    color: #adb5bd;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.summit-container {
+    margin-top: 40px;
+}
+
+.summit-btn {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: #2A7DE1;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
 
 /* Footer CSS ===============================================================================================================================================================*/
 footer {
@@ -906,6 +1091,26 @@ footer {
     z-index: 7;
 }
 
+.mobile-detail-header-con {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    height: 52px;
+}
+
+.mobile-detail-header-back {
+    cursor: pointer;
+}
+
+.mobile-detail-header-title {
+    color: rgb(4, 5, 5);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    line-height: 25px;
+    margin-left: 4px;
+}
+
 
 @media (max-width: 1000px) {
     footer {
@@ -940,6 +1145,10 @@ footer {
         position: relative;
         top: 0;
         transform: translateY(2%);
+    }
+
+    .header-nav-container {
+        display: none;
     }
 
     .mobile.search-input-icon {
@@ -998,5 +1207,21 @@ footer {
 
     .main-container {
         margin-top: 53px;
+    }
+
+    .main-container .grid {
+        padding: 0;
+    }
+
+    .mobile-detail-header-con {
+        display: flex;
+    }
+
+    .write-form-wrap {
+        max-width: 100%;
+    }
+
+    .write-form-container {
+        margin-bottom: auto;
     }
 }

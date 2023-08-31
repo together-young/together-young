@@ -1,7 +1,22 @@
 $(function () {
   // 게시글 우측상단 액션버튼 작동 코드
   $(".post-action-btn").on("click", function () {
-    $(".post-action-list-container").toggle();
+    if (!window.matchMedia("(max-width: 1000px)").matches) {
+      $(".post-action-list-container").toggle();
+    } else {
+      $(".backdrop").css("display", "flex");
+      $(".post-action-modal").css("transform", "translateY(0)");
+    }
+  });
+
+  $(".backdrop").on("click", function () {
+    $(".backdrop").css("display", "none");
+    $(".post-action-modal").css("transform", "translateY(100%)");
+  });
+
+  $(".back").on("click", function () {
+    $(".backdrop").css("display", "none");
+    $(".post-action-modal").css("transform", "translateY(100%)");
   });
 
   $(document).on("click", function (event) {
@@ -11,9 +26,8 @@ $(function () {
     }
   });
 
-  let liked = false;
-
   // 좋아요 버튼 누를시 작동 코드
+  let liked = false;
   $("#post-like").on("click", function () {
     if (!liked) {
       $("#post-like-svg").css("fill", "rgb(233, 37, 37)");
@@ -23,6 +37,19 @@ $(function () {
       $("#post-like-svg").css("fill", "rgb(148, 155, 160)");
       $("#post-like-count").css("color", "rgb(148, 155, 160)");
       liked = false;
+    }
+  });
+
+  let marked = false;
+  $("#post-bookmark").on("click", function () {
+    if (!marked) {
+      $("#post-bookmark-svg").css("fill", "rgb(0, 160, 0)");
+      $("#post-bookmark-count").css("color", "rgb(0, 160, 0)");
+      marked = true;
+    } else {
+      $("#post-bookmark-svg").css("fill", "rgb(148, 155, 160)");
+      $("#post-bookmark-count").css("color", "rgb(148, 155, 160)");
+      marked = false;
     }
   });
 
@@ -56,9 +83,7 @@ $(function () {
     button.prop("disabled", !isEnabled);
   }
 
-  // 댓글 추가 시 댓글 수 +1 추가 되도록 후일에 구현하여야 함 혹은 댓글 작성시 페이지 새로고침 필요 //
-
-  // 댓글 수정 버튼을 누를시 textarea로 화면 전환 및 댓글 내용이 수정창으로 복사(서버 접속 최소화를 위함)
+  // 댓글 수정 버튼 누를시 textarea로 전환
   $(".reply-edit-btn").on("click", function () {
     let replyContainer = $(this).closest(".reply-article");
     let replyView = replyContainer.find(".reply-view");

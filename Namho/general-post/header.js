@@ -43,11 +43,22 @@ $(function () {
 
   // 서브 헤더 박스 밖으로 마우스가 벗어날 시 호버링 제거
   $("header").mouseleave(function () {
-    if ($(".first-menu").css("display") === "flex") {
-      $(".first-menu").css("display", "none");
-    }
     if ($(".second-menu").css("display") === "flex") {
       $(".second-menu").css("display", "none");
+      $(".first-menu").css("display", "flex");
     }
+  });
+
+  // 모바일 쿼리
+  $(".search-input-icon").click(function () {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+      $(".mobile-search-bar").css("display", "flex");
+      $(".backdrop").css("display", "flex");
+    }
+  });
+
+  $(".mobile-search-back-con").click(function () {
+    $(".mobile-search-bar").css("display", "none");
+    $(".backdrop").css("display", "none");
   });
 });

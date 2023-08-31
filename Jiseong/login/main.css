@@ -6,14 +6,6 @@
     outline: none;
 }
 
-.cls-1 {
-    font-size: 50px;
-    font-weight: 100;
-    fill: #2a7de1;
-    text-anchor: middle;
-    font-family: "Black Han Sans";
-}
-
 .h1,
 .h2,
 .h3,
@@ -274,11 +266,6 @@ hr {
     margin-bottom: 24px;
 }
 
-.wrap {
-    width: 100%;
-    height: 100%;
-}
-
 /* Header CSS ===============================================================================================================================================================*/
 header {
     background-color: #fff;
@@ -316,6 +303,14 @@ header {
     letter-spacing: .05em;
 }
 
+text.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .header-nav {
     display: flex;
     margin: 26px;
@@ -338,9 +333,8 @@ header {
     margin-left: 24px;
 }
 
-.header-nav-container-right {
+.header-nav-continer-right {
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-left: auto;
 }
@@ -349,6 +343,8 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: relative;
+    width: 300px;
+    height: 40px;
 }
 
 .search-input {
@@ -604,44 +600,6 @@ header {
     opacity: 1;
 }
 
-.mobile-search-bar {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 52px;
-    transition: 0.2;
-    transform: translateX(-16px);
-    background-color: #fff;
-    z-index: 10;
-    padding: 10px 16px;
-    border: 0;
-    border-bottom: 1px solid #f3f4f5;
-}
-
-.mobile-search-container {
-    display: flex;
-    flex-direction: row;
-    padding: 0 8px;
-    width: 100%;
-    position: relative;
-    align-items: center;
-}
-
-.mobile-search-back-con {
-    margin-right: 16px;
-}
-
-.backdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 5;
-}
-
 /* Sub-Header CSS ===============================================================================================================================================================*/
 .sub-header {
     background-color: #fff;
@@ -759,244 +717,378 @@ header {
 
 /* 메인 컨테이너 작성해주세요 */
 .main-container {
-    min-height: calc(100vh - 342px);
+    min-height: calc(100vh - 842px);
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 2px;
 }
 
-
-/* Footer CSS ===============================================================================================================================================================*/
-footer {
-    padding: 48px 0 60px;
-    border: 1px solid #eaecee;
-    bottom: 0;
+div.c-application-main-grip {
+    min-height: calc(100vh - 324px);
+    background-color: rgb(255, 255, 255);
     width: 100%;
+    padding: 0;
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
 }
 
-.footer-font {
-    color: rgb(118, 125, 130);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-}
-
-.footer-container {
-    flex: 0 0 100%;
-    max-width: 1108px;
+div.c-application-c-row {
+    margin-right: -24px;
+    margin-left: -24px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.footer-container h2 {
+div.c-application-login {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 85px;
+}
+
+div.c-application-login-view {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 38.5px;
+    width: 343px;
+    margin: auto;
+    display: block;
+}
+
+div.c-application-headline {
     color: rgb(32, 35, 37);
+    line-height: 140%;
+    font-size: 24px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
 }
 
-.customer-center-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 184px;
-    width: 280px;
+div.login-btn-wrapper {
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    color: #495057;
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: #fff;
 }
 
-.work-time-info {
-    margin-top: 20px;
-}
-
-.customer-center-btn {
-    background-color: transparent;
-    border: 1px solid #949ba0;
-    color: #767d82;
+div.register-button-kakao {
+    background: #fee500;
+    color: #181600;
+    border-radius: 4px;
+    height: 48px;
     width: 100%;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 600;
-    height: 36px;
-    line-height: 20px;
-    min-width: 49px;
-    padding: 0 12px;
-    cursor: pointer;
+    margin: 0 0 12px;
+    padding-left: 16px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+}
+
+div.register-button-icon {
+    margin-right: 2px;
+    width: 24px;
+    height: 48px;
+   
+}
+
+img {
+    display: flex;
+    width: 100%!important;
+    height: 100%;
+    border-style: none;
+    max-width: 100%;
+    
+}
+
+div.ml-67 {
+    margin-left: 6px !important;
+    display: flex;
+    height: 100%;
+    align-items: center;
     position: relative;
 }
 
-.customer-center-icon {
-    background-color: transparent;
-    cursor: auto;
-    margin-right: 2px;
+div.c-application-typing {
+    color: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+
+div.another-login-button {
     display: flex;
-}
-
-.service-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 280px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.service-box {
-    cursor: pointer;
-    width: max-content;
-    margin-top: 12px;
-}
-
-.info-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 418px;
-}
-
-.info-sub-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.terms {
-    display: flex;
+    justify-content: flex-start;
     align-items: center;
+    border-radius: 4px;
+    height: 48px;
+    padding-left: 16px;
+    background-color: #fcfcfc;
 }
 
-.section-devider {
-    border-color: rgb(234, 236, 238);
-    border-style: solid;
-    border-left: 1px;
-    height: inherit;
-    width: 0;
-    margin: 0 32px;
+a.c-application-another-start {
+    color: rgb(173, 179, 184);
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .02em;
+    font-weight: 400;
+    margin-left: 8px;
+    
 }
 
-.link-right {
-    display: flex;
-    float: right;
-}
-
-.link-right li {
-    margin-right: 8px;
-}
-
-.mobile-bottom-nav-con {
-    display: none;
-    background-color: #fff;
-    position: fixed;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
+div.second-c-application {
+    min-height: calc(100vh - 324px);
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 61px;
-    border: 0;
-    border-top: 1px solid #f3f4f5;
-    z-index: 7;
+    padding: 0;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------ */
+div.login-mb-85 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    height: 600px;
+}
+
+div.login-view-wrapper {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 38.5px;
+    width: 343px;
+    margin: auto;
+    display: block;
+    height: 543.59px;
+}
+
+div.c-headline3 {
+    color: rgb(32, 35, 37);
+    line-height: 140%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+div.register-buttons {
+    width: 100%;
+    margin-bottom: 24px;
+    height: 114px;
+}
+
+div.button-email {
+    background: #EAECEE;
+    color: #949ba0;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin: 0 0 12px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.button-icon {
+    margin-right: 2px;
+    width: 24px;
+    height: 48px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    max-width: 100%;
+}
+
+div.ml-6 {
+    margin-left: 6px !important;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+a.button-massage {
+    color: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+
+div.button-kakao {
+    background: #fee500;
+    color: #181600;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin: 0 0 12px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
-@media (max-width: 1000px) {
-    footer {
-        display: none;
-    }
+p {
+    color: rgb(173, 179, 184);
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
 
-    .header-nav-container {
-        height: 52px;
-    }
+a.agree {
+    background-color: transparent;
+    color: #495057;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    .header-nav {
-        display: none;
-    }
+u.d-block {
+    color: rgb(42, 125, 225);
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-left: 80px;
+}
 
-    .search-input {
-        display: none;
-    }
+div.email-small {
+    color: rgb(60, 65, 68);
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
 
-    .header-login {
-        display: none;
-    }
+span {
+    box-sizing: border-box;
+    outline: none;
+    color: #e1e4e6;
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
 
-    .header-icon:nth-child(3) {
-        display: none;
-    }
+span.young-to {
+    letter-spacing: .01em;
+    border: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    outline: none;
+    color: #2A7DE1;
+    font-weight: 700;
+}
 
-    .header-icon:nth-child(2) {
-        margin-right: 0;
-    }
+div.id-field {
+    position: relative;
+}
 
-    .search-input-icon {
-        position: relative;
-        top: 0;
-        transform: translateY(2%);
-    }
+div.id-input {
+    position: relative;
+}
 
-    .mobile.search-input-icon {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+input.input-field {
+    text-align: left;
+    padding: 0 16px;
+    border: 1px solid #e1e4e6;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #3c4144;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .02em;
 
-    .input-erase-btn {
-        display: none;
-    }
+}
 
-    .mobile.input-erase-btn {
-        display: flex;
-    }
+div.pw-small {
+    color: rgb(60, 65, 68);
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
 
-    .header-icons-division ul {
-        margin-left: 8px;
-    }
+div.pw-field {
+    position: relative;
+}
 
-    .sub-header {
-        display: none;
-    }
+div.pw-input {
+    position: relative;
+}
 
-    .mobile.search-bar {
-        width: 100%;
-    }
+input.input-field2 {
+    text-align: left;
+    padding: 0 16px;
+    border: 1px solid #e1e4e6;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #3c4144;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .02em;
+}
 
-    .mobile.search-input {
-        display: flex;
-    }
+button.login-button {
+    height: 48px!important;
+    margin: 24px 0;
+    width: 100%;
+    padding: 0 12px;
+    min-width: 49px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    background-color: #2a7de1;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
 
-    .mobile-bottom-nav-con {
-        display: flex;
-    }
+div.c-button-icon {
+    display: flex;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
 
-    .mobile-bottom-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 87.75px;
-    }
+div.semi-bold {
+    color: inherit;
+    font-weight: 600!important;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .02em;
 
-    .mobile-bottom-title {
-        color: #767D82;
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 13px;
-        margin-top: 2px;
-    }
-
-    .icons-btn:hover:not(.user-profile) {
-        background-color: transparent;
-    }
-
-    .main-container {
-        margin-top: 53px;
-    }
 }

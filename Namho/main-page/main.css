@@ -6,6 +6,14 @@
     outline: none;
 }
 
+.cls-1 {
+    font-size: 50px;
+    font-weight: 100;
+    fill: #2a7de1;
+    text-anchor: middle;
+    font-family: "Black Han Sans";
+}
+
 .h1,
 .h2,
 .h3,
@@ -266,6 +274,11 @@ hr {
     margin-bottom: 24px;
 }
 
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
 /* Header CSS ===============================================================================================================================================================*/
 header {
     background-color: #fff;
@@ -325,8 +338,9 @@ header {
     margin-left: 24px;
 }
 
-.header-nav-continer-right {
+.header-nav-container-right {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: auto;
 }
@@ -335,8 +349,6 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    width: 300px;
-    height: 40px;
 }
 
 .search-input {
@@ -590,6 +602,44 @@ header {
     border-style: solid;
     border-color: #f3f4f5;
     opacity: 1;
+}
+
+.mobile-search-bar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 52px;
+    transition: 0.2;
+    transform: translateX(-16px);
+    background-color: #fff;
+    z-index: 10;
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.mobile-search-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.mobile-search-back-con {
+    margin-right: 16px;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
 }
 
 /* Sub-Header CSS ===============================================================================================================================================================*/
@@ -863,53 +913,65 @@ header {
     perspective: 1000px;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 636px solid transparent;
-    border-bottom: 358px solid #E0703F;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-}
-
 .front-flip,
 .back-flip {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    background-color: #2A7DE1;
     backface-visibility: hidden;
     border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.front-flip {
+    background-image: url("banner/front.jpg");
 }
 
 .back-flip {
     transform: rotateX(180deg);
-    background-color: #fff;
+    background-image: url("banner/back.jpg");
+}
+
+.back-flip::before {
+    content: "";
+    /* 의사 요소의 내용은 비워둡니다 */
+    position: absolute;
+    /* 절대 위치로 설정하여 요소 위에 위치 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 내부 요소의 너비와 높이를 100%로 설정하여 전체 영역을 채우도록 함 */
+    height: 100%;
+    background-image: url("banner/flipbanner.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    /* 블러 효과 적용 */
+    z-index: -1;
+    /* 배경 이미지 레이어를 요소 아래로 이동시켜 내용을 가리지 않도록 함 */
 }
 
 .logo-font {
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.5;
-    position: absolute;
+    color: #2A7DE1;
 }
 
-.logo-front-left,
-.logo-back-left {
-    top: 80px;
-    left: 40px;
+.logo-frontflip {
+    margin-right: 40px;
 }
 
-.logo-front-right,
-.logo-back-right {
-    bottom: 80px;
-    right: 40px;
-    z-index: 10;
+.flips-type-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .logo-back-left {
@@ -936,8 +998,11 @@ header {
 .introduce-container {
     display: flex;
     position: relative;
+    flex-direction: row;
     width: 100%;
     margin-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-section-title {
@@ -945,6 +1010,19 @@ header {
     font-weight: 600;
     line-height: 33px;
     font-size: 26px;
+}
+
+.link-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #fff;
+    background-color: #2A7DE1;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    text-align: center;
 }
 
 .cards-container {
@@ -957,7 +1035,7 @@ header {
 }
 
 .card {
-    width: 259px;
+    width: 33.33%;
     height: 416px;
     margin-right: 24px;
     display: flex;
@@ -1070,6 +1148,32 @@ header {
     position: relative;
     border: 1px solid rgb(234, 236, 238);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.indicator-container {
+    display: flex;
+    position: absolute;
+    border-radius: 0 0 0 10px;
+    top: 0;
+    right: 0;
+    padding: 5px 12px;
+    overflow: hidden;
+    background: hsla(0, 100%, 62%, 0.678);
+}
+
+.indicator {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.indicator.active {
+    display: flex;
 }
 
 .community:last-child {
@@ -1380,4 +1484,184 @@ footer {
 
 .link-right li {
     margin-right: 8px;
+}
+
+.mobile-bottom-nav-con {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+    border: 0;
+    border-top: 1px solid #f3f4f5;
+    z-index: 7;
+}
+
+
+@media (max-width: 1000px) {
+    footer {
+        display: none;
+    }
+
+    .header-nav-container {
+        height: 52px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .header-login {
+        display: none;
+    }
+
+    .header-icon:nth-child(3) {
+        display: none;
+    }
+
+    .header-icon:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .search-input-icon {
+        position: relative;
+        top: 0;
+        transform: translateY(2%);
+    }
+
+    .mobile.search-input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-erase-btn {
+        display: none;
+    }
+
+    .mobile.input-erase-btn {
+        display: flex;
+    }
+
+    .header-icons-division ul {
+        margin-left: 8px;
+    }
+
+    .sub-header {
+        display: none;
+    }
+
+    .mobile.search-bar {
+        width: 100%;
+    }
+
+    .mobile.search-input {
+        display: flex;
+    }
+
+    .mobile-bottom-nav-con {
+        display: flex;
+    }
+
+    .mobile-bottom-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 87.75px;
+    }
+
+    .mobile-bottom-title {
+        color: #767D82;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .icons-btn:hover:not(.user-profile) {
+        background-color: transparent;
+    }
+
+    .main-container {
+        margin-top: 53px;
+    }
+
+    .inner-container {
+        flex-direction: column;
+        margin: 20px 20px 0 20px;
+    }
+
+    .banner-mainfont {
+        margin-bottom: 10px;
+    }
+
+    .banner-right-side-box {
+        width: 100%;
+        height: 300px;
+    }
+
+    .banner-right-side-box-moving {
+        width: 100%;
+        height: 300px;
+    }
+
+    .logo-font {
+        font-size: 30px;
+    }
+
+    .logo-frontflip {
+        margin-right: 20px;
+    }
+
+    .back-flip .cls-1 {
+        font-size: 40px;
+    }
+
+    #banner-btns {
+        justify-content: center;
+        top: 413px;
+    }
+
+    .card {
+        margin-right: 5px;
+        width: 32.3%;
+    }
+
+    .card-img-box {
+        height: 200px;
+    }
+
+    .community-introduce {
+        margin: 0 0 140px;
+    }
+
+    .introduce-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-section-title {
+        margin-bottom: 4px;
+    }
+
+    .community {
+        width: 100%;
+        margin-right: 2px;
+    }
+
+    .community-content-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
 }

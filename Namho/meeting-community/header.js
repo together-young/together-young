@@ -45,9 +45,7 @@ $(function () {
   $("header").mouseleave(function () {
     if ($(".first-menu").css("display") === "flex") {
       $(".first-menu").css("display", "none");
-    }
-    if ($(".second-menu").css("display") === "flex") {
-      $(".second-menu").css("display", "none");
+      $(".second-menu").css("display", "flex");
     }
   });
 });
