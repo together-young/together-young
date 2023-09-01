@@ -800,6 +800,12 @@ header {
     z-index: 7;
 }
 
+.caption1 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
 .inside-container {
     margin-top: 36px;
     margin-bottom: 100px;
