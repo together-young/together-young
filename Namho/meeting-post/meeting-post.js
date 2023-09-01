@@ -39,18 +39,6 @@ $(function () {
     }
   });
 
-  // 게시글의 높이에 따라 팝업창 위치 조정
-  const postHeight = $(".post-content").height();
-  $(".participants-view-wrap").css({
-    transform: `translate3d(260px, ${175 + postHeight + 54}px, 0px)`,
-  });
-  $(".map-wrap").css({
-    transform: `translate3d(220px, ${180 + postHeight + 16}px, 0px)`,
-  });
-  $(".date-wrap").css({
-    transform: `translate3d(760px, ${180 + postHeight + 16}px, 0px)`,
-  });
-
   // 맵 팝업
   let isMapOn = false;
 

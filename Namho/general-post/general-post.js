@@ -14,11 +14,6 @@ $(function () {
     $(".post-action-modal").css("transform", "translateY(100%)");
   });
 
-  $(".back").on("click", function () {
-    $(".backdrop").css("display", "none");
-    $(".post-action-modal").css("transform", "translateY(100%)");
-  });
-
   $(document).on("click", function (event) {
     const target = $(event.target);
     if (!target.closest(".post-action").length) {
