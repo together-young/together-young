@@ -1249,6 +1249,10 @@ footer {
         overflow: hidden;
     }
 
+    .footer-container {
+        height: 40px;
+    }
+
     .header-nav-container {
         height: 52px;
     }

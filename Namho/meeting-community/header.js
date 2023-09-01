@@ -129,6 +129,20 @@ $(function () {
     }
   }
 
+  // 스크롤을 끝까지 내리면 모바일의 글 추가 버튼을 위로 재배치
+  $(window).scroll(function () {
+    var scrollHeight = $(document).height();
+    var scrollTop = $(window).scrollTop();
+    var clientHeight = $(window).height();
+    var writeBtn = $(".write-btn");
+
+    if (scrollTop + clientHeight >= scrollHeight) {
+      writeBtn.css("bottom", "108px");
+    } else {
+      writeBtn.css("bottom", "72px");
+    }
+  });
+
   // 모바일 푸터
   const footer = $(".footer-container");
   let startX;
