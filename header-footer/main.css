@@ -771,125 +771,36 @@ header {
 
 /* Footer CSS ===============================================================================================================================================================*/
 footer {
-    padding: 48px 0 60px;
     border: 1px solid #eaecee;
     bottom: 0;
     width: 100%;
     position: relative;
-}
-
-.footer-font {
-    color: rgb(118, 125, 130);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
+    background-color: #f3f4f5;
+    white-space: nowrap;
 }
 
 .footer-container {
-    flex: 0 0 100%;
-    max-width: 1108px;
     display: flex;
-}
-
-.footer-container h2 {
-    color: rgb(32, 35, 37);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.customer-center-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 184px;
-    width: 280px;
-}
-
-.work-time-info {
-    margin-top: 20px;
-}
-
-.customer-center-btn {
-    background-color: transparent;
-    border: 1px solid #949ba0;
-    color: #767d82;
-    width: 100%;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 600;
-    height: 36px;
-    line-height: 20px;
-    min-width: 49px;
-    padding: 0 12px;
-    cursor: pointer;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
+    height: 24px;
 }
 
-.customer-center-icon {
-    background-color: transparent;
-    cursor: auto;
-    margin-right: 2px;
-    display: flex;
+.footer-link {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    color: rgb(118, 125, 130);
+    margin-right: 12px;
 }
 
-.service-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 280px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.service-box {
-    cursor: pointer;
-    width: max-content;
-    margin-top: 12px;
-}
-
-.info-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 418px;
-}
-
-.info-sub-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.terms {
-    display: flex;
-    align-items: center;
-}
-
-.section-devider {
-    border-color: rgb(234, 236, 238);
-    border-style: solid;
-    border-left: 1px;
-    height: inherit;
+.footer-devider {
+    border: 0;
+    border-left: 1px solid rgb(118, 125, 130);
+    height: 8px;
     width: 0;
-    margin: 0 32px;
-}
-
-.link-right {
-    display: flex;
-    float: right;
-}
-
-.link-right li {
-    margin-right: 8px;
+    margin: 0 12px;
 }
 
 .mobile-bottom-nav-con {
@@ -909,11 +820,16 @@ footer {
 
 @media (max-width: 1000px) {
     footer {
-        display: none;
+        margin-bottom: 62px;
     }
 
-    .header-nav-container {
-        height: 52px;
+    .footer-view-container {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .footer-container {
+        height: 40px;
     }
 
     .header-nav {
