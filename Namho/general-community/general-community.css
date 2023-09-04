@@ -649,7 +649,7 @@ header {
     position: fixed;
     transition: all 0.1s;
     width: 100vw;
-    z-index: 6;
+    z-index: 5;
     top: 69px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .02);
 }
@@ -657,52 +657,26 @@ header {
 .sub-header-box {
     max-width: 1140px;
     background-color: inherit;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.mobile-region-select-btn-con {
-    display: none;
 }
 
 .sub-header-menu {
+    margin-left: -12px;
+    margin-right: -12px;
     display: flex;
-    cursor: default !important;
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
+    width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid #f3f4f5;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slidable {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    width: 100%;
-}
-
-.first {
-    display: flex;
-    white-space: nowrap;
 }
 
 .first-menu {
     display: flex;
 }
 
-.second {
-    display: none;
-}
-
 .second-menu {
     display: none;
-    white-space: nowrap;
-    overflow: auto;
 }
 
 .sub-header-menu-title {
@@ -714,7 +688,6 @@ header {
     min-width: auto;
     outline: 0;
     padding: 4px;
-    white-space: nowrap;
     width: fit-content;
     height: 43px;
     display: flex;
@@ -748,7 +721,6 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    white-space: nowrap;
 }
 
 .sub-header-menu-btn:not(:last-child) {
@@ -773,10 +745,6 @@ header {
 .hover-font-weight-600:hover {
     font-weight: 600;
     color: #595f63;
-}
-
-.mobile-region-popover-wrap {
-    display: none;
 }
 
 /* Main CSS ============================================================================================================================================================== */
