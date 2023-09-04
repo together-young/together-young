@@ -2297,3 +2297,23 @@ input[type="checkbox"]:checked + .able:before {
   overflow: hidden;
   position: relative;
 }
+
+.participant-add-friend-con {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.add-friend-btn {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2A7DE1;
+  white-space: nowrap;
+  cursor: pointer;
+}
