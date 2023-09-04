@@ -7,33 +7,19 @@ $(function () {
     "어느 지역에 살고 계신가요?",
   ];
   var randomIndex = Math.floor(Math.random() * randomTexts.length);
-  $(".search-first").attr("placeholder", randomTexts[randomIndex]);
+  $(".search-input").attr("placeholder", randomTexts[randomIndex]);
 
   // header의 서치창에 입력시 지우기 버튼 띄우기
-  $(".search-first").on("input", function () {
+  $(".search-input").on("input", function () {
     if ($(this).val().trim() !== "") {
-      $(".erase-all-first").show();
+      $(".erase-all").show();
     } else {
-      $(".erase-all-first").hide();
+      $(".erase-all").hide();
     }
   });
-
-  $(".search-second").on("input", function () {
-    if ($(this).val().trim() !== "") {
-      $(".erase-all-second").show();
-    } else {
-      $(".erase-all-second").hide();
-    }
-  });
-
 
   // 지우기 버튼 클릭시 input value 삭제
-  $(".erase-all-first").on("click", function () {
-    $(".search-input").val("").focus();
-    $(this).hide();
-  });
-
-  $(".erase-all-second").on("click", function () {
+  $(".erase-all").on("click", function () {
     $(".search-input").val("").focus();
     $(this).hide();
   });
@@ -57,11 +43,9 @@ $(function () {
 
   // 서브 헤더 박스 밖으로 마우스가 벗어날 시 호버링 제거
   $("header").mouseleave(function () {
-    if ($(".first-menu").css("display") === "flex") {
-      $(".first-menu").css("display", "none");
-    }
     if ($(".second-menu").css("display") === "flex") {
       $(".second-menu").css("display", "none");
+      $(".first-menu").css("display", "flex");
     }
   });
 });
