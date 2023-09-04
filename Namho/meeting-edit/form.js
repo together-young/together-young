@@ -33,4 +33,13 @@ $(function () {
     $("#regionDropdown").removeClass("active");
     $("#regionIcon").removeClass("rotate");
   });
+
+  const textarea = $(".form-content");
+  const typeCounter = $("#type-counter");
+
+  textarea.on("input", function () {
+    const text = textarea.val();
+    const textLength = text.length;
+    typeCounter.text(textLength);
+  });
 });
