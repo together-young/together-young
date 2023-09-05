@@ -1313,4 +1313,12 @@ footer {
     .write-btn {
         display: flex;
     }
+
+    .sub-header-devider {
+        margin: auto 5px;
+    }
+
+    .sub-header-menu-btn:not(:last-child) {
+        margin-right: 2px;
+    }
 }

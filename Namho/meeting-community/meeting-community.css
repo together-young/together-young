@@ -1434,7 +1434,11 @@ footer {
         margin-right: 5px;
     }
 
-    .mobile-checkbox-label:not(:last-child) {
-        margin-right: px;
+    .sub-header-devider {
+        margin: auto 5px;
+    }
+
+    .sub-header-menu-btn:not(:last-child) {
+        margin-right: 4px;
     }
 }
