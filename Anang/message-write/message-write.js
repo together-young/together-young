@@ -12,4 +12,6 @@ $(function () {
     $("#categoryDropdown").removeClass("active");
     $("#categoryIcon").removeClass("rotate");
   });
+
+
 });
