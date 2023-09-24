@@ -299,11 +299,11 @@ header {
     height: 100%;
 }
 
-.search-first{
+.search-first {
     padding: 10px 36px 10px 58px;
 }
 
-.search-second{
+.search-second {
     padding: 10px 36px 10px 58px;
     width: 243px;
 }
@@ -362,6 +362,62 @@ header {
     opacity: .8;
     position: relative;
     z-index: 2;
+}
+
+.icons-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    height: 28px;
+    padding: 2px;
+    width: 28px;
+}
+
+.icons-btn:hover:not(.user-profile) {
+    background-color: #f3f4f5;
+}
+
+.mobile-search-bar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 52px;
+    transition: 0.2;
+    transform: translateX(-16px);
+    background-color: #fff;
+    z-index: 10;
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.mobile-search-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.mobile-search-back-con {
+    margin-right: 16px;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
 }
 
 /* 메인 컨테이너 작성해주세요 */
@@ -672,13 +728,15 @@ footer {
     background-size: 100% 100%;
 }
 
-.right-box-profile-background {
-    display: -ms-flexbox;
+.no-avatar {
+    background: #f3f4f5;
+    height: 100%;
+    width: 100%;
     display: flex;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
 }
 
 .name-memo-box {

@@ -1834,6 +1834,7 @@ input[type="checkbox"]:checked + .able:before {
 
 .friend-message-btn {
     background-color: #D9E5F7;
+    cursor:pointer;
     border: transparent;
     color: #000000;
     border-radius: 6px;
@@ -1850,6 +1851,7 @@ input[type="checkbox"]:checked + .able:before {
 .friend-delete-btn {
     display: none;
     background-color: #ffdddb;
+    cursor:pointer;
     border: transparent;
     color: #000000;
     border-radius: 6px;

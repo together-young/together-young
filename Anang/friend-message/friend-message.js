@@ -1,16 +1,8 @@
 $(function () {
-  // 액션버튼(글) 코드
-  $(".post-action-btn").on("click", function () {
-    $(this).closest(".post-action").find(".post-action-list-container").toggle();
-  });
 
-  $(document).on("click", function (event) {
-    const target = $(event.target);
-    if (!target.closest(".post-action").length) {
-      $(".post-action-list-container").hide();
-    }
-  });
 
+
+  // 친구의 서치창에 입력시 지우기 버튼 띄우기
   $(".search-input").on("input", function () {
     if ($(this).val().trim() !== "") {
       $(".erase-all-second").show();

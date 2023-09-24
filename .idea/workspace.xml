@@ -5,43 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9baadd7a-f445-44d6-aebd-a1595e1fe931" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Anang/message-list/message-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Anang/message-list/message-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Anang/message-list/message-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/each-schedule/each-schedule.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/each-schedule/each-schedule.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/each-schedule/each-schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/each-schedule/each-schedule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/each-schedule/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/each-schedule/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/each-schedule/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/each-schedule/update-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anang/each-schedule/each-schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/each-schedule/each-schedule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anang/friend-list/firend-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-list/firend-list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/friend-list/friend-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-list/friend-list.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/friend-list/friend-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-list/friend-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/update-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-message/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/friend-message/friend-message.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-message/friend-message.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/friend-message/friend-message.html" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-message/friend-message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-message/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-message/images/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-message/images/disableCheck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-message/images/kakaoIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/friend-search/friend-search.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-search/friend-search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/friend-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-search/friend-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/images/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/images/disableCheck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/images/kakaoIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-write/favicon copy.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-write/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-write/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-write/message-write.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/message-write/message-write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anang/friend-search/friend-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-search/friend-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anang/message-write/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/message-write/message-write.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Anang/message-write/message-write.html" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/message-write/message-write.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/schedule.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/my-schedule/schedule.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/my-schedule/schedule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/update-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anang/my-schedule/schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/my-schedule/schedule.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,21 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web/git/workspace/project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Web/git/workspace/project/Anang/friend-message",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Web\git\workspace\project\Anang\friend-message" />
+      <recent name="C:\Web\git\workspace\project\Anang" />
       <recent name="C:\Web\git\workspace\project\Anang\friend-search" />
       <recent name="C:\Web\git\workspace\project\Anang\my-schedule" />
     </key>
@@ -95,6 +77,7 @@
       <workItem from="1695528417581" duration="121000" />
       <workItem from="1695528688956" duration="142000" />
       <workItem from="1695528865510" duration="576000" />
+      <workItem from="1695530105167" duration="11102000" />
     </task>
     <servers />
   </component>
