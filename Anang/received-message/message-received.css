@@ -270,7 +270,7 @@ hr {
 
 .wrap {
     width: 100%;
-    height: 100%;
+    height: 90vh !important;
 }
 
 /* Header CSS ===============================================================================================================================================================*/
@@ -473,7 +473,7 @@ footer {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .main-container-big-box {

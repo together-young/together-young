@@ -270,7 +270,7 @@ hr {
 
 .wrap {
     width: 100%;
-    height: 100%;
+    height: 90vh !important;
 }
 
 /* Header CSS ===============================================================================================================================================================*/
@@ -299,11 +299,11 @@ header {
     height: 100%;
 }
 
-.search-first {
+.search-first{
     padding: 10px 36px 10px 58px;
 }
 
-.search-second {
+.search-second{
     padding: 10px 36px 10px 58px;
     width: 243px;
 }
@@ -362,62 +362,6 @@ header {
     opacity: .8;
     position: relative;
     z-index: 2;
-}
-
-.icons-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    border-radius: 4px;
-    height: 28px;
-    padding: 2px;
-    width: 28px;
-}
-
-.icons-btn:hover:not(.user-profile) {
-    background-color: #f3f4f5;
-}
-
-.mobile-search-bar {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 52px;
-    transition: 0.2;
-    transform: translateX(-16px);
-    background-color: #fff;
-    z-index: 10;
-    padding: 10px 16px;
-    border: 0;
-    border-bottom: 1px solid #f3f4f5;
-}
-
-.mobile-search-container {
-    display: flex;
-    flex-direction: row;
-    padding: 0 8px;
-    width: 100%;
-    position: relative;
-    align-items: center;
-}
-
-.mobile-search-back-con {
-    margin-right: 16px;
-}
-
-.backdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 5;
 }
 
 /* 메인 컨테이너 작성해주세요 */
@@ -529,7 +473,7 @@ footer {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .main-container-big-box {
@@ -684,8 +628,7 @@ footer {
 }
 
 .right-box-big {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 12px 24px !important;
     box-sizing: border-box;
     position: relative;
     width: 100%;
@@ -695,10 +638,35 @@ footer {
 
 .right-box-small {}
 
+.profileContentsHeader {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.profileContentsTitle {
+    align-items: center;
+    display: flex !important;
+    height: 29px;
+    justify-content: space-between;
+}
+
+.personalInfoSetting {
+    color: #3c4144;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
 .right-box-friend-box {}
 
 .right-box-friend {
-    margin-bottom: 20px !important;
     border-radius: 4px;
     display: flex !important;
     flex-direction: row;
@@ -728,16 +696,7 @@ footer {
     background-size: 100% 100%;
 }
 
-.no-avatar {
-    background: #f3f4f5;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 100%;
-}
+
 
 .name-memo-box {
     align-items: flex-end;
@@ -769,15 +728,16 @@ footer {
 }
 
 .post-action-list-container {
-    visibility: hidden;
-    opacity: 0;
+    border-radius: 10px;
+    width: max-content;
+    background: #fff;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .06);
+    box-sizing: border-box;
+    display: none;
+    overflow-y: auto;
     position: absolute;
-    width: 100px;
-    right: 0;
-    z-index: 5;
-    transition: opacity .15s, visibility .15s;
-    background-color : #d4e5f9;
-    border-radius: 6%;
+    top: 100%;
+    z-index: 6;
 }
 
 .post-action-selection {
@@ -803,11 +763,98 @@ footer {
 }
 
 .memo-text {
-    border: #ffffff;
-    background-color: #ffffff;
-    cursor:pointer;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
 }
 
+/*=============================메세지 란 ================================*/
+
+.title{
+    width:312px;
+    padding : 13px 0 6px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.nickname{
+    width:90px;
+    padding: 13px 0 6px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.date{
+    width:90px;
+    padding: 13px 0 6px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.message-title{
+    cursor:pointer;
+    width:312px;
+    padding : 6px 0 6px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.message-nickname{
+    cursor:pointer;
+    width:90px;
+    padding: 6px 0 6px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.message-date{
+    width:90px;
+    padding: 6px 0 6px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.enter-button-icon {
+    display: flex!important;
+}
+
+.delete-btn {
+    background-color: #ffdddb;
+    cursor:pointer;
+    border: transparent;
+    color: #000000;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 20px;
+    min-width: 49px;
+    padding: 0 12px;
+    bottom: 20px;
+    right: 20px;
+    margin-left: 4px;
+}
+
+.change-page:hover {
+    color: rgb(4, 5, 5);
+    font-weight: 500;
+}
+
+.page-btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #595f63;
+}
+
+.btn-grid {
+    margin-right: 15px;
+}
+
+.btn-grid:last-child {
+    margin-right: 0;
+}
