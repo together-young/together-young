@@ -1590,6 +1590,7 @@ a {
   line-height: 15px;
   word-wrap: break-word;
   word-break: keep-all;
+  display: none;
 }
 
 .saveContactInfo {
