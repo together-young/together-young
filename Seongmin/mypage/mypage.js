@@ -50,6 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ".notificationSettingContainer"
   );
 
+  const phoneNumberBox = document.querySelector(".phoneNumberBox");
+  const saveContactInfo = document.querySelector(".saveContactInfo");
+  const phoneNumberErrorMessage = document.querySelector(".phoneNumberErrorMessage");
+
   // 1. myProfileContainer나 membershipWithdrawalContainer onclick시 선택된 컨텐츠 class에 active 추가하고 다른 컨테이너 html에서 class 속성 중에 active 빼기
   myProfileContainer.addEventListener("click", (e) => {
     changeActive(e);
@@ -182,6 +186,18 @@ document.addEventListener("DOMContentLoaded", function () {
       profileContentsContainer.style.display = "none";
     });
   }
+
+  // 9. 휴대폰 번호 유효성 검사
+  saveContactInfo.addEventListener("click", (e) => {
+    console.log(phoneNumberBox.value);
+    if(phoneNumberBox.value.length < 11){
+      phoneNumberErrorMessage.style.display = "block";
+      saveContactInfo.style.backgroundColor = "#d4e5f9";
+    } else {
+      phoneNumberErrorMessage.style.display = "none";
+      saveContactInfo.style.backgroundColor = "#2a7de1";
+    }
+  });
 
   document.addEventListener("click", (e) => {
     console.log(e.target);

@@ -5,15 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9baadd7a-f445-44d6-aebd-a1595e1fe931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/firend-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/friend-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/Anang/friend-list/friend-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-list/friend-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-message/friend-message.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/friend-search/friend-search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-list/message-list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-list/message-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anang/message-list/message-list.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,24 +19,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Vm5LtmVBZvMpgcT4fC3RiBgjaB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Web/git/workspace/project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Web\git\workspace\project\Anang\friend-message" />
@@ -70,9 +53,6 @@
       <workItem from="1695528688956" duration="142000" />
       <workItem from="1695528865510" duration="576000" />
       <workItem from="1695530105167" duration="11102000" />
-      <workItem from="1695604851770" duration="3945000" />
-      <workItem from="1695707293664" duration="44000" />
-      <workItem from="1696071892770" duration="1065000" />
     </task>
     <servers />
   </component>
